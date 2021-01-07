@@ -1,0 +1,147 @@
+<div class="flex flex-col md:flex-row h-screen w-screen justify-between">
+  <div class="md:w-20 w-screen  bg-gray-200 pt-8 shadow-sm">
+    <div class="flex flex-col items-center gap-6 ">
+      <div class="w-full flex justify-center p-2">
+        <svg class="w-6" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 294.843 294.843"
+          style="enable-background:new 0 0 294.843 294.843;" xml:space="preserve">
+          <g>
+                  <path d="M147.421,0C66.133,0,0,66.133,0,147.421c0,40.968,17.259,80.425,47.351,108.255c2.433,2.25,6.229,2.101,8.479-0.331
+          c2.25-2.434,2.102-6.229-0.332-8.479C27.854,221.3,12,185.054,12,147.421C12,72.75,72.75,12,147.421,12
+          s135.421,60.75,135.421,135.421s-60.75,135.421-135.421,135.421c-3.313,0-6,2.687-6,6s2.687,6,6,6
+          c81.289,0,147.421-66.133,147.421-147.421S228.71,0,147.421,0z" />
+                  <path
+                    d="M84.185,90.185h126.473c3.313,0,6-2.687,6-6s-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6S80.872,90.185,84.185,90.185z" />
+                  <path
+                    d="M84.185,153.421h126.473c3.313,0,6-2.687,6-6s-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6S80.872,153.421,84.185,153.421z" />
+                  <path d="M216.658,210.658c0-3.313-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6s2.687,6,6,6h126.473
+          C213.971,216.658,216.658,213.971,216.658,210.658z" />
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+      </div>
+      <div class="w-full flex justify-center p-2  border-r-2 bg-red-800 border-yellow-600">
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg class="w-6 fill-current text-white" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 247.789 247.789" style="enable-background:new 0 0 247.789 247.789;"
+          xml:space="preserve">
+          <path d="M223.779,122.895c-3.313,0-6,2.687-6,6v106.895h-64.384v-67.102c0-3.313-2.687-6-6-6h-47c-3.313,0-6,2.687-6,6v53.207
+c0,3.313,2.687,6,6,6s6-2.687,6-6v-47.207h35v61.102H30.01V88.929l93.884-75.239l96.132,77.04c2.586,2.073,6.362,1.655,8.434-0.93
+c2.072-2.586,1.656-6.361-0.93-8.434L127.646,1.318c-2.192-1.758-5.312-1.758-7.504,0L20.258,81.366
+c-1.421,1.139-2.248,2.86-2.248,4.682v155.741c0,3.313,2.686,6,6,6h199.769c3.314,0,6-2.687,6-6V128.895
+C229.779,125.581,227.093,122.895,223.779,122.895z" />
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+
+      </div>
+    </div>
+  </div>
+  <!-- // MIDDLE CONTAINER -->
+  <div class="bg-white h-screen w-full p-4">
+    <!-- MAIN CATEGORY -->
+    <div class="flex flex-row gap-2 justify-center mt-8 items-center">
+      <div class="border-gray-300 hover:border-red-800 cursor-pointer rounded-md border-2" [ngClass]="{'is-cat-selected': isCatSelected == i}" *ngFor="let item of categoryList; index as i" (click)="itemSelected(i,item.title)">
+        <div class="flex flex-row items-center gap-2 p-2">
+          <img class="w-4 h-4" [src]="item.url" alt="">
+          <p class="m-0 text-xs">{{item.title}}</p>
+        </div>
+      </div>
+    </div>
+    <!-- SUB CATEGORY -->
+    <div class="flex mt-8 flex-row h-8 border-b-2 border-red-800.opacity-0">
+      <div class="relative" *ngFor="let item of subCat; index as i" (click)="itemSelected(i, 'all', 'main')">
+        <div class="item mr-4">
+            <p class="m-0 text-black text-sm text-center">{{item}}</p>
+        </div>
+        <div class="absolute -bottom-0.5 h-1 w-16 bg-red-800 opacity-0" [class]="{'selectTab': subCatSelectedIndex === i}"></div>
+      </div>
+    </div>
+    <!-- Items List -->
+    <!-- <div class="itemslist w-full mt-12">
+      <div class="flex flex-row max-w-full flex-wrap gap-12" *ngFor="let menu of selectedData | keyvalue">
+        <div class="item-card flex flex-col w-64 h-64 gap-4" *ngFor="let item of menu.value;index as i">
+          <img class="w-64 h-48 rounded-md" src="assets/menu-items/food.JPG" alt="" srcset="">
+          <div class="fic-content">
+            <p>{{item.name}}</p>
+            <p>{{item.subType}}</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, corporis.</p>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+    <div class="items-container">
+      <div class="items-head" *ngFor="let menu of selectedData | keyvalue">
+        <div class="items-list" *ngFor="let item of menu.value;index as i">
+          <img src="assets/menu-items/food.JPG" alt="" srcset="">
+          <div class="content-main">
+            <p>{{item.name}}</p>
+            <p>{{item.subType}}</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, corporis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex place-content-center shadow-sm w-screen md:w-1/5 bg-gray-200">
+    <p class="text-black font-normal pt-2 text-lg">Your Order</p>
+  </div>
+</div>

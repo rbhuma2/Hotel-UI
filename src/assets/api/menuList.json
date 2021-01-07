@@ -1,0 +1,1618 @@
+{
+    "links": [
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc005687cd30f45ff18af26"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc006927cd30f45ff18af2e"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc006257cd30f45ff18af2b"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc006077cd30f45ff18af2a"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc0058d7cd30f45ff18af27"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc005e67cd30f45ff18af29"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc0064c7cd30f45ff18af2c"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc006747cd30f45ff18af2d"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc005a67cd30f45ff18af28"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc005407cd30f45ff18af25"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc007237cd30f45ff18af2f"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc007437cd30f45ff18af30"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff5e47cd30f45ff18aef7"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffba97cd30f45ff18af0e"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff5a07cd30f45ff18aef5"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff9967cd30f45ff18af0a"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff7c97cd30f45ff18af00"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff77a7cd30f45ff18aefe"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff79b7cd30f45ff18aeff"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff7e77cd30f45ff18af01"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff80a7cd30f45ff18af02"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff8277cd30f45ff18af03"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffc627cd30f45ff18af13"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff8437cd30f45ff18af04"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffc907cd30f45ff18af14"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff6237cd30f45ff18aef8"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff6b57cd30f45ff18aefb"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff9b77cd30f45ff18af0b"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff97e7cd30f45ff18af09"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff5bd7cd30f45ff18aef6"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff6477cd30f45ff18aef9"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff6647cd30f45ff18aefa"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff5517cd30f45ff18aef4"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffc407cd30f45ff18af12"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffbf07cd30f45ff18af10"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff75e7cd30f45ff18aefd"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffc177cd30f45ff18af11"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffbc67cd30f45ff18af0f"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff70b7cd30f45ff18aefc"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff9467cd30f45ff18af08"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffd387cd30f45ff18af17"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffd827cd30f45ff18af19"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff9187cd30f45ff18af07"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffda27cd30f45ff18af1a"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffcf07cd30f45ff18af15"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff8d57cd30f45ff18af05"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffde87cd30f45ff18af1c"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff8f87cd30f45ff18af06"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffd1a7cd30f45ff18af16"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffdc97cd30f45ff18af1b"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbffd537cd30f45ff18af18"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff9e77cd30f45ff18af0c"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc007b97cd30f45ff18af32"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc007967cd30f45ff18af31"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc004a37cd30f45ff18af24"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc0042f7cd30f45ff18af21"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc0047a7cd30f45ff18af23"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc003f07cd30f45ff18af1f"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc004127cd30f45ff18af20"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc003a57cd30f45ff18af1d"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc003cb7cd30f45ff18af1e"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fc004497cd30f45ff18af22"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff0497cd30f45ff18aedf"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff0397cd30f45ff18aede"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff36d7cd30f45ff18aeec"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff1bf7cd30f45ff18aee3"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff3f37cd30f45ff18aeef"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff3a57cd30f45ff18aeed"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff3cd7cd30f45ff18aeee"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff2787cd30f45ff18aee7"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff2db7cd30f45ff18aee9"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff20d7cd30f45ff18aee4"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff0bc7cd30f45ff18aee1"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff3017cd30f45ff18aeea"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff34e7cd30f45ff18aeeb"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff2b77cd30f45ff18aee8"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff0937cd30f45ff18aee0"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff2317cd30f45ff18aee5"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff1727cd30f45ff18aee2"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff2547cd30f45ff18aee6"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff4a17cd30f45ff18aef2"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff4da7cd30f45ff18aef3"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff45b7cd30f45ff18aef0"
+        },
+        {
+            "rel": "item",
+            "href": "http://localhost:9090/v1/item/5fbff47e7cd30f45ff18aef1"
+        },
+        {
+            "rel": "first",
+            "href": "http://localhost:9090/v1/item?page=1&size=100"
+        },
+        {
+            "rel": "last",
+            "href": "http://localhost:9090/v1/item?page=1&size=100"
+        },
+        {
+            "rel": "current",
+            "href": "http://localhost:9090/v1/item?page=1&size=100"
+        },
+        {
+            "rel": "self",
+            "href": "http://localhost:9090/v1/item?page=1&size=100"
+        }
+    ],
+    "content": [
+        {
+            "name": "Butter Nan",
+            "description": "Freshly baked leavened bread finished with a sprinkle offtesh coriander gz butter.",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "BREAD & ROTIS",
+            "subType": "Common",
+            "identifier": "5fc005687cd30f45ff18af26",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc005687cd30f45ff18af26"
+                }
+            ]
+        },
+        {
+            "name": "Charcoal Roti",
+            "description": "Whole wheat unleavened bread.",
+            "amount": 2.2,
+            "type": "Common",
+            "category": "BREAD & ROTIS",
+            "subType": "Common",
+            "identifier": "5fc006927cd30f45ff18af2e",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc006927cd30f45ff18af2e"
+                }
+            ]
+        },
+        {
+            "name": "Cheese Nan",
+            "description": "Bread stuffed with grated cheese.",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "BREAD & ROTIS",
+            "subType": "Common",
+            "identifier": "5fc006257cd30f45ff18af2b",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc006257cd30f45ff18af2b"
+                }
+            ]
+        },
+        {
+            "name": "Chili & Garlic Nan",
+            "description": "Unleavened bread stuffed with chilies and coated with garlic.",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "BREAD & ROTIS",
+            "subType": "Common",
+            "identifier": "5fc006077cd30f45ff18af2a",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc006077cd30f45ff18af2a"
+                }
+            ]
+        },
+        {
+            "name": "Garlic Nan",
+            "description": "Unleavened bread coated with crushed garlic & pureghee.",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "BREAD & ROTIS",
+            "subType": "Common",
+            "identifier": "5fc0058d7cd30f45ff18af27",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc0058d7cd30f45ff18af27"
+                }
+            ]
+        },
+        {
+            "name": "Keema Nan",
+            "description": "Bread stuffed with minced lamb",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "BREAD & ROTIS",
+            "subType": "Common",
+            "identifier": "5fc005e67cd30f45ff18af29",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc005e67cd30f45ff18af29"
+                }
+            ]
+        },
+        {
+            "name": "Kulcha Nan",
+            "description": "Bread stuffed with g rated cheese.",
+            "amount": 2.95,
+            "type": "Common",
+            "category": "BREAD & ROTIS",
+            "subType": "Common",
+            "identifier": "5fc0064c7cd30f45ff18af2c",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc0064c7cd30f45ff18af2c"
+                }
+            ]
+        },
+        {
+            "name": "Laccha Paratha",
+            "description": "Flaky whole wheat unleavened bread.",
+            "amount": 2.9,
+            "type": "Common",
+            "category": "BREAD & ROTIS",
+            "subType": "Common",
+            "identifier": "5fc006747cd30f45ff18af2d",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc006747cd30f45ff18af2d"
+                }
+            ]
+        },
+        {
+            "name": "Peshwari Nan",
+            "description": "Bread stuffed with sweet almond. coconut & sultana paste.",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "BREAD & ROTIS",
+            "subType": "Common",
+            "identifier": "5fc005a67cd30f45ff18af28",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc005a67cd30f45ff18af28"
+                }
+            ]
+        },
+        {
+            "name": "Plain Nan",
+            "description": "Freshly baked leavened bread In charcoal flame, with out the use of butter",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "BREAD & ROTIS",
+            "subType": "Common",
+            "identifier": "5fc005407cd30f45ff18af25",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc005407cd30f45ff18af25"
+                }
+            ]
+        },
+        {
+            "name": "Green Salad",
+            "description": "Dazzling simple salad, wherefresh juicy tomato, anion, cucumber, lemon, green chilies are gently mixed and served on a dressed plotter.",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "FRESH SALADS",
+            "subType": "Common",
+            "identifier": "5fc007237cd30f45ff18af2f",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc007237cd30f45ff18af2f"
+                }
+            ]
+        },
+        {
+            "name": "Laccha Salad",
+            "description": "Lightly spiced red onion rings, finely garnished with home-made massala and fresh coriander leavesfor aroma & served on a beautifully dressed platter.",
+            "amount": 4.5,
+            "type": "Common",
+            "category": "FRESH SALADS",
+            "subType": "Common",
+            "identifier": "5fc007437cd30f45ff18af30",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc007437cd30f45ff18af30"
+                }
+            ]
+        },
+        {
+            "name": "Aachari Lamb",
+            "description": "Lamb Achari is one of India favourite pickled dishes, which are usually made using mustard oil and a special combination of spices. This is a home-style recipe and has a slight sourish tang to it and is not that spicy as the ingredients would suggest because the vinegar and yoghurt offsets the heat. The lamb is cooked with five different whole spices and garnished with fresh coriander & sliced ginger.",
+            "amount": 12.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Lamb Dishes",
+            "identifier": "5fbff5e47cd30f45ff18aef7",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff5e47cd30f45ff18aef7"
+                }
+            ]
+        },
+        {
+            "name": "Bulsari Salmon",
+            "description": "Our chefs have especially recreated this very distinctive dish for you to on joy, Tender pieces of salmonis marinated with honey, almond powder, fresh dill & the core Indian spices such as turmeric, cumin, dhaniya, garlic & ginger. Cooked with onion, mixed peppers & tomatoes in the clay oven, once the dish is dressed on Its platter, an elusive makhani sauce is drizzled over the tender salmon & then sprinkled with blackpepper & mixed crushed nuts to create a delicate yet richflavouredfish curry.",
+            "amount": 15.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Sea Food Dishes",
+            "identifier": "5fbffba97cd30f45ff18af0e",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffba97cd30f45ff18af0e"
+                }
+            ]
+        },
+        {
+            "name": "Chandni Chowk",
+            "description": "Indulge yourself in this fabulous dish, where tenderised chunks of lambs cooked with onion, tomato and fennel, prepared in the simplest way, garnished with fresh coriander fresh coriander gz sliced ginger, served in a delicious sauce creating a mouth watering dish to enjoy.",
+            "amount": 12.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Lamb Dishes",
+            "identifier": "5fbff5a07cd30f45ff18aef5",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff5a07cd30f45ff18aef5"
+                }
+            ]
+        },
+        {
+            "name": "Chicken Biryani",
+            "description": "Succulent pieces or chicken breast cooked with basmati rice, filed onion, green cardamom, fresh mint leaves and saffron, topped with sliced ginger &fresh coriander, then sealed in a pot to ambush thegorgeous aroma &flavour, and served with Raita",
+            "amount": 14.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Chicken Dishes",
+            "identifier": "5fbff9967cd30f45ff18af0a",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff9967cd30f45ff18af0a"
+                }
+            ]
+        },
+        {
+            "name": "Chicken Chengizi",
+            "description": "A Very popular dish sold on almost every street corner of Old Delhi; a clever Indian and Chinese fusion brought for you by Spice Bar & Grill where the best of both worlds twine together in one dish; where diced onions. green peppers, and shallow fried juicy pieces of chicken are gently stir-fried with a hint of green chilli, garlic and tomato sauce and afinal touch of lemon juice, a drop of vinegar, soy sauce 8: coriander completes this spectacular mouth watering dish.",
+            "amount": 14.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Chicken Dishes",
+            "identifier": "5fbff7c97cd30f45ff18af00",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff7c97cd30f45ff18af00"
+                }
+            ]
+        },
+        {
+            "name": "Chicken Korma",
+            "description": "Chicken Korma is Spice Bar & Grill mildest dish prepared and cooked In the simplest traditional Bangladeshi style. Luscious pieces ofchicken is cooked in pure ghee (butter), sautéed onion, then thickened with fresh cream and milk. spicing is more subtle with the use of aromatic spices such as cardamom, clove. cinnamon & bay leaves. which brings thefiavours togetherfor on enticing taste.",
+            "amount": 12.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Chicken Dishes",
+            "identifier": "5fbff77a7cd30f45ff18aefe",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff77a7cd30f45ff18aefe"
+                }
+            ]
+        },
+        {
+            "name": "Chicken Kurchan",
+            "description": "Chicken Jalfrezi is another newly introduced dish by Spice Bar & Grill. Our Jalfrezi is cooked in the 'Old Delhi style, this delicious hot dish is prepared using succulent Julienne strips ofchicken cooked in authentic Indian herbs and spices along with onion and tomato, It does not have much or a sauce. and so instead the thick sauce tantalisingly clings to the spicy chicken, mixed peppers &fresh green chillies.",
+            "amount": 14.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Chicken Dishes",
+            "identifier": "5fbff79b7cd30f45ff18aeff",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff79b7cd30f45ff18aeff"
+                }
+            ]
+        },
+        {
+            "name": "Chicken Madras",
+            "description": "A popular chicken dish from South of India. Tender chicken pieces marinated in chilly, ginger and garlic. Cooked in onions, tomato sauce and selected Indian spices and garnished with whole red chillies.",
+            "amount": 12.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Chicken Dishes",
+            "identifier": "5fbff7e77cd30f45ff18af01",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff7e77cd30f45ff18af01"
+                }
+            ]
+        },
+        {
+            "name": "Chicken Shashlick",
+            "description": "Tender pieces ofchicken marinated in Indian spices, skewered with peppers and onions. Charcoalgrilled.",
+            "amount": 15.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Chicken Dishes",
+            "identifier": "5fbff80a7cd30f45ff18af02",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff80a7cd30f45ff18af02"
+                }
+            ]
+        },
+        {
+            "name": "Chicken Tikka Massala",
+            "description": "Cube of Chicken marinated with ginger, garlic, chilly and yogurt charcoal grilled and curried in onion, tomato gravy and selected Indian spices & cream.",
+            "amount": 12.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Chicken Dishes",
+            "identifier": "5fbff8277cd30f45ff18af03",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff8277cd30f45ff18af03"
+                }
+            ]
+        },
+        {
+            "name": "Grilled King Prawn",
+            "description": "Whole king prawn on shell treated with lime and turmeric in richly spiced peppery masala.",
+            "amount": 16.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Sea Food Dishes",
+            "identifier": "5fbffc627cd30f45ff18af13",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffc627cd30f45ff18af13"
+                }
+            ]
+        },
+        {
+            "name": "Kadhai Chicken",
+            "description": "Chicken tikka pieces stir-fried in Kadhaigravy with garlic, coriander and red chillies.",
+            "amount": 12.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Chicken Dishes",
+            "identifier": "5fbff8437cd30f45ff18af04",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff8437cd30f45ff18af04"
+                }
+            ]
+        },
+        {
+            "name": "Kadhai Fish",
+            "description": "Chunks offishfillet stir-fried in Kadhaigravy with garlic, coriander and red chillies.",
+            "amount": 15.95,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Sea Food Dishes",
+            "identifier": "5fbffc907cd30f45ff18af14",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffc907cd30f45ff18af14"
+                }
+            ]
+        },
+        {
+            "name": "Kadhai Lamb",
+            "description": "Boneless lamb in a Kadhai gravy with garlic, peppers, coriander and red chillies.",
+            "amount": 12.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Lamb Dishes",
+            "identifier": "5fbff6237cd30f45ff18aef8",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff6237cd30f45ff18aef8"
+                }
+            ]
+        },
+        {
+            "name": "Keema Matar",
+            "description": "Lamb mince and green peas spiced with ginger, green chillies, & bay leaves.",
+            "amount": 11.5,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Lamb Dishes",
+            "identifier": "5fbff6b57cd30f45ff18aefb",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff6b57cd30f45ff18aefb"
+                }
+            ]
+        },
+        {
+            "name": "King Prawn Biryani",
+            "description": "This special Lucknow! biryani is a delightful dish; not particularly spicy but aromatic, it is where king prawn is stir fried with basmati rice, cardamom, mace, cashew nuts, raisins & the essence of saffron, along with fresh coriander and sliced ginger to garnish, then simmered in a sealed pot to preserve the rich taste, and served with Raita",
+            "amount": 16.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Sea Food Dishes",
+            "identifier": "5fbff9b77cd30f45ff18af0b",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff9b77cd30f45ff18af0b"
+                }
+            ]
+        },
+        {
+            "name": "Lamb Biryani",
+            "description": "Tenderised pieces or lamb cooked in brown onion, grinded cardamom, cashew nuts and raisins, tossed with bosmati rice, and flavoured with fresh mint leaves as well as saffron for that essential aroma, then gently garnished with sliced ginger &fiesh coriander leaves, served with Raita.",
+            "amount": 14.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Lamb Dishes",
+            "identifier": "5fbff97e7cd30f45ff18af09",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff97e7cd30f45ff18af09"
+                }
+            ]
+        },
+        {
+            "name": "Lamb Dalcha",
+            "description": "Dalcha is a Hyderabadi Muslim dish and is more commonly known as Dansak, This dish is newly introduced by Spice Bar gz Grill, where succulent pieces or fresh spring lamb is cooked with channa dal (yellow lentils), sizzled in fresh Indian spices, garam massala, onion, tomato and yoghurt, then served in a delicious sauce creating a sourish tang with curry leaves &fresh coriander.",
+            "amount": 12.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Lamb Dishes",
+            "identifier": "5fbff5bd7cd30f45ff18aef6",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff5bd7cd30f45ff18aef6"
+                }
+            ]
+        },
+        {
+            "name": "Lamb Madras",
+            "description": "Boneless lamb cooked in spices, with coriander, cumin &fresh ginger.",
+            "amount": 12.5,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Lamb Dishes",
+            "identifier": "5fbff6477cd30f45ff18aef9",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff6477cd30f45ff18aef9"
+                }
+            ]
+        },
+        {
+            "name": "Lamb Rogan Josh",
+            "description": "Tender lamb cubes cooked in onion, tomato gravy and yoghurt spiced with selected Indian spices.",
+            "amount": 12.5,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Lamb Dishes",
+            "identifier": "5fbff6647cd30f45ff18aefa",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff6647cd30f45ff18aefa"
+                }
+            ]
+        },
+        {
+            "name": "Lamb Suganda",
+            "description": "Lamb Suganda is absolutely irresistible with exquisiteflavours and aroma. It is a highly recommended dish by Spice Bar gz Grill, where juicy pieces of lamb are cooked in the South Indian way with fresh dill and fine homemade spices. served with a sprinkle of dill.",
+            "amount": 12.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Lamb Dishes",
+            "identifier": "5fbff5517cd30f45ff18aef4",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff5517cd30f45ff18aef4"
+                }
+            ]
+        },
+        {
+            "name": "Lobster Pepper",
+            "description": "Whole lobster in shell treated with lime and turmeric in richly spiced peppery masala.",
+            "amount": 27.95,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Sea Food Dishes",
+            "identifier": "5fbffc407cd30f45ff18af12",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffc407cd30f45ff18af12"
+                }
+            ]
+        },
+        {
+            "name": "Meen Chettinad",
+            "description": "This is another gorgeous dish to go for; Talapiyafish is the native fish of Africa & the Middle East and is widely used in Indian cuisine, The fish is filleted and marinated in a combination of lemon juice & mustard oil, and then shallow fried to allow plenty offlavour to be absorbed Into thefish. Thefillets are then cooked with coconut milk, onion, tomato, garlic, ginger, black pepper & mustard seeds, ready for garnishing with herbal overtones of curry leaves.",
+            "amount": 14.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Sea Food Dishes",
+            "identifier": "5fbffbf07cd30f45ff18af10",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffbf07cd30f45ff18af10"
+                }
+            ]
+        },
+        {
+            "name": "Murgh Makhani",
+            "description": "Murgh Makhani is a mild and a very popular dish for the purveyors of traditional Indian cuisine, where succulent pieces or chicken tikka is prepared In rich. tomato based sauce, cashewnut paste, massala spices, garam massala Kashmiri mirchi, along with butter. tomato paste 8: fresh cream creating a deliciously smooth creamy sauce. just before serving, while the dish is piping hot, af-urther touch of butter is added for that extra buttery flavour.",
+            "amount": 12.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Chicken Dishes",
+            "identifier": "5fbff75e7cd30f45ff18aefd",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff75e7cd30f45ff18aefd"
+                }
+            ]
+        },
+        {
+            "name": "Prawn Gulnaar",
+            "description": "King prawn Gulnaar is a rich flavoured dish very much recommended by Spice Bar & Grill. King prawns are soaked in vinegar and lemon juice for the freshness to seep in. It is cooked with tomato and onion massala sauce along with principal Indian spices. Freshly chopped capsicums and drops at lemon juice are added to the dish for that essential semi-dry texture, and then garnished with sprinkles of fresh coriander & ginger for a wonderful aroma.",
+            "amount": 16.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Sea Food Dishes",
+            "identifier": "5fbffc177cd30f45ff18af11",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffc177cd30f45ff18af11"
+                }
+            ]
+        },
+        {
+            "name": "Sea Bass Patrani",
+            "description": "Sea bass is one of Spice Bar & Grill's popular dishes; it is delicately marinated and flavoured with fresh ground mustard, yoghurt and aromatic blend of Indian spices, such as cardamom, cinnamon, fenugreek. caraway and star anise. which is then gently cooked in the charcoal oven, and served on a beautiful dressed plattergarnished with fresh dill, slices oflemon & drizzled with olive oil.",
+            "amount": 15.9,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Sea Food Dishes",
+            "identifier": "5fbffbc67cd30f45ff18af0f",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffbc67cd30f45ff18af0f"
+                }
+            ]
+        },
+        {
+            "name": "Spice Bar & Grill Special Mix Grill",
+            "description": "Served with a spicy sauce and nan bread. The ultimate non-vegetarian platter -fish, chicken, lamb served with mint dip.",
+            "amount": 14.5,
+            "type": "NonVeg",
+            "category": "MAIN COURSES",
+            "subType": "Lamb Dishes",
+            "identifier": "5fbff70b7cd30f45ff18aefc",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff70b7cd30f45ff18aefc"
+                }
+            ]
+        },
+        {
+            "name": "Aloo Gobi",
+            "description": "A spicy curry made with cauliflower and potatoes, together cooked with cumin seed and garnished julienne ginger and coriander leaves.",
+            "amount": 9.95,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbff9467cd30f45ff18af08",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff9467cd30f45ff18af08"
+                }
+            ]
+        },
+        {
+            "name": "Bhindi Bahar",
+            "description": "Bhindi or more commonly known as okra is a delicious vegetable; it has been delightful essence to it, and is worth trying. Freshly trimmer, tender, bhindi is tossed in a onion and tomato sauce, light Indian herbs and spices, cherry tomatoes, and chunks of mixed peppers are prepared in a semi dry sauce, &then sprinkled with fresh coriander leavesfor aroma.",
+            "amount": 5.8,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbffd387cd30f45ff18af17",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffd387cd30f45ff18af17"
+                }
+            ]
+        },
+        {
+            "name": "Dal Bhukara",
+            "description": "A dish with a twist, black lentils is the most popular dal in the Punjab and Delhi, and is known as Urad dal and is immensely buttery; what makes this dish extra tasty is that the rich lentils are marinated overnight on charcoal and then cooked in butter, fresh tomato puree and cream, then served with a touch offresh coriander leaves.",
+            "amount": 5.9,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbffd827cd30f45ff18af19",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffd827cd30f45ff18af19"
+                }
+            ]
+        },
+        {
+            "name": "Gobi Gulcha",
+            "description": "A very tasty semi dry vegetable curry. fresh cauliflowerflorets are sauteed in olive oil, onion, tomato, garlic, ginger, cinnamon & cumin, It is served with a touch of fresh coriander leavesfor that special aroma.",
+            "amount": 9.95,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbff9187cd30f45ff18af07",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff9187cd30f45ff18af07"
+                }
+            ]
+        },
+        {
+            "name": "Jeera Moo",
+            "description": "Jeera (cumin) a spice that brings a pungent taste to any dish, and is one of the main flavours that characterises Indian food. Jeera aloo is where boiled potatoes are sauteed in olive oil, onion, whole cumin, fresh garlic, ginger, home-made garam massala, and is served with a sprinkle of cumin powder &fresh coriander leavesfor aroma and appearance.",
+            "amount": 5.8,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbffda27cd30f45ff18af1a",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffda27cd30f45ff18af1a"
+                }
+            ]
+        },
+        {
+            "name": "Mushroom Hara",
+            "description": "Mushroom fans, this one is ideal for you. Hara literally means 'green spices', where sliced pieces of button mushroom and spring onion are cooked in a tomato and onion based sauce. selectedftesh green spices such as ginger, garlic, green bay leaves & green cardamom and then garnished with a decorative sprinkle of fresh coriander leaves.",
+            "amount": 5.5,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbffcf07cd30f45ff18af15",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffcf07cd30f45ff18af15"
+                }
+            ]
+        },
+        {
+            "name": "Paneer Tikka Makhani",
+            "description": "This is a mild mouth watering vegetable dish similar to Murgh Makhani, where cubed pieces of cottage cheese (paneer) is prepared in crushed garlic and ginger and simmered in light herbs and spices, garam massala, and in a buttery home-made tomato & onion sauce. Fresh cream is also added to create the delightful smooth creamy sauce, and a touch ofKashmiri mirchi adds the vibrant rect colour. It is garnished with a sprinkle offtesh coriander leaves.",
+            "amount": 9.95,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbff8d57cd30f45ff18af05",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff8d57cd30f45ff18af05"
+                }
+            ]
+        },
+        {
+            "name": "Pindi Chana",
+            "description": "Pindi chana another popular dish on the streets ofIndia, where chickpeas aregently cooked in a tomato and onion based sauce, along with the special chana masala spice and hint of mango powder to give it a distinctive taste. His then garnished with fresh coriander leaves.",
+            "amount": 5.9,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbffde87cd30f45ff18af1c",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffde87cd30f45ff18af1c"
+                }
+            ]
+        },
+        {
+            "name": "Sabzi Miloni",
+            "description": "Sabzi miloni is a simple yet creative dish using mixed vegetables; perfect for our vegetarian guests. A selection oftasty vegetables and visible chunks of onions and green peppers aretossed and cooked in an onion and tomato sauce, roasted home-made Indian herbs and spices making a thin to thick consistency of a curry. It is then g ently garnished with cherry tomato, fresh coriander leaves 8: sliced ginger.",
+            "amount": 9.95,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbff8f87cd30f45ff18af06",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff8f87cd30f45ff18af06"
+                }
+            ]
+        },
+        {
+            "name": "Sag Aloo",
+            "description": "Pureed fresh spinach gently tossed with bite-sized pieces of potato cooked in finely chopped onion, garlic & ginger. and the traditional Indian spices. such as cumin, dhaniya, cinnamon & turmeric. This dish is lightly garnished with a sprinkle offtesh coriander.",
+            "amount": 5.8,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbffd1a7cd30f45ff18af16",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffd1a7cd30f45ff18af16"
+                }
+            ]
+        },
+        {
+            "name": "Sag Paneer",
+            "description": "Try this mouth-watering vegetable dish; absolutely gorgeous, pureed spinach and cottage cheese is cooked is cooked in the simplest way, using the subtle touch of different types of Indian herbs and spices, garlic, ginger, onion, cumin and fenugreek, & is served with a touch offreshly chopped coriander.",
+            "amount": 5.8,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbffdc97cd30f45ff18af1b",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffdc97cd30f45ff18af1b"
+                }
+            ]
+        },
+        {
+            "name": "Tarka Dal",
+            "description": "A dal combination is perfect, healthy vegetarian protein dish; it is tasty and easy to digest, our tarka dal is a semi-dry dish, which makes use of three different yet popular types of lentils, masoor dal, toot dal and moong dal. The dais are sizzled in onion, crushed garlic, tomato and whole cumin; the dish is then evenly sprinkled withfresh coriander.",
+            "amount": 5.8,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbffd537cd30f45ff18af18",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbffd537cd30f45ff18af18"
+                }
+            ]
+        },
+        {
+            "name": "Vegetable Biryani",
+            "description": "A tangible selection orfresh mixed vegetables is sauted In onion, basmati rice, green cardamom, cashew nuts & raisins, flavoured with fresh mint leaves and saffron for aroma, topped with coriander & sliced ginger, then simmered in a sealed pat, served with Raita.",
+            "amount": 13.9,
+            "type": "Veg",
+            "category": "MAIN COURSES",
+            "subType": "Veg Dishes",
+            "identifier": "5fbff9e77cd30f45ff18af0c",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff9e77cd30f45ff18af0c"
+                }
+            ]
+        },
+        {
+            "name": "Cucumber Raita",
+            "description": "Cucumber, salt, pepper, cumin powder & sugar whisked In yoghurt, garnished when paprika &fresh coriander leaves.",
+            "amount": 2.9,
+            "type": "Common",
+            "category": "RAITAS",
+            "subType": "Common",
+            "identifier": "5fc007b97cd30f45ff18af32",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc007b97cd30f45ff18af32"
+                }
+            ]
+        },
+        {
+            "name": "Spice Bar & Grill's Exclusive Mixed Raita",
+            "description": "Onion, tomato, cucumber, salt & pepper, whisked in yoghurt, littlesugar, and served with a sprinkled of fresh coriander leaves.",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "RAITAS",
+            "subType": "Common",
+            "identifier": "5fc007967cd30f45ff18af31",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc007967cd30f45ff18af31"
+                }
+            ]
+        },
+        {
+            "name": "Egg Pulao",
+            "description": "Pulao rice tossed with egg and spiced.",
+            "amount": 3.8,
+            "type": "NonVeg",
+            "category": "RICE",
+            "subType": "Egg",
+            "identifier": "5fc004a37cd30f45ff18af24",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc004a37cd30f45ff18af24"
+                }
+            ]
+        },
+        {
+            "name": "Kashmiri Rice",
+            "description": "Basmati rice stir-fried with dried fruit and subtle home-made spices.",
+            "amount": 3.9,
+            "type": "Veg",
+            "category": "RICE",
+            "subType": "Veg",
+            "identifier": "5fc0042f7cd30f45ff18af21",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc0042f7cd30f45ff18af21"
+                }
+            ]
+        },
+        {
+            "name": "Keema Pulao",
+            "description": "Pulao rice tossed with lamb mince spiced with ginger & chillies.",
+            "amount": 3.9,
+            "type": "Veg",
+            "category": "RICE",
+            "subType": "Veg",
+            "identifier": "5fc0047a7cd30f45ff18af23",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc0047a7cd30f45ff18af23"
+                }
+            ]
+        },
+        {
+            "name": "Lemon Rice",
+            "description": "Plain rice cooked with tumeric, a hint of chilli, mustard seeds, cashew nuts, curry leaves & lemon juice.",
+            "amount": 3.8,
+            "type": "Veg",
+            "category": "RICE",
+            "subType": "Veg",
+            "identifier": "5fc003f07cd30f45ff18af1f",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc003f07cd30f45ff18af1f"
+                }
+            ]
+        },
+        {
+            "name": "Mushroom Rice",
+            "description": "Basmati rice stir-fried with sliced mushrooms and a hint of home-made spices",
+            "amount": 3.9,
+            "type": "Veg",
+            "category": "RICE",
+            "subType": "Veg",
+            "identifier": "5fc004127cd30f45ff18af20",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc004127cd30f45ff18af20"
+                }
+            ]
+        },
+        {
+            "name": "Plain Rice",
+            "description": "Boiled Rice",
+            "amount": 3.5,
+            "type": "Veg",
+            "category": "RICE",
+            "subType": "Veg",
+            "identifier": "5fc003a57cd30f45ff18af1d",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc003a57cd30f45ff18af1d"
+                }
+            ]
+        },
+        {
+            "name": "Pulau Rice",
+            "description": "Basmati rice cooked with onion, and a variety of aromatic spices.",
+            "amount": 3.6,
+            "type": "Veg",
+            "category": "RICE",
+            "subType": "Veg",
+            "identifier": "5fc003cb7cd30f45ff18af1e",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc003cb7cd30f45ff18af1e"
+                }
+            ]
+        },
+        {
+            "name": "Vegetable Pulao",
+            "description": "Pulao rice tossed with cumin tempered vegetables.",
+            "amount": 3.9,
+            "type": "Veg",
+            "category": "RICE",
+            "subType": "Veg",
+            "identifier": "5fc004497cd30f45ff18af22",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fc004497cd30f45ff18af22"
+                }
+            ]
+        },
+        {
+            "name": "Black Pepper Papadams",
+            "description": "Our papads ore fantastic to begin with, as they are very scrumptious & crispy  and are served with delicious mango chutney, homemade mint sauce and mixed pickle.",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "STARTERS",
+            "subType": "Common",
+            "identifier": "5fbff0497cd30f45ff18aedf",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff0497cd30f45ff18aedf"
+                }
+            ]
+        },
+        {
+            "name": "Plain Papadams",
+            "description": "Our papads ore fantastic to begin with, as they are very scrumptious & crispy  and are served with delicious mango chutney, homemade mint sauce and mixed pickle.",
+            "amount": 3.5,
+            "type": "Common",
+            "category": "STARTERS",
+            "subType": "Common",
+            "identifier": "5fbff0397cd30f45ff18aede",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff0397cd30f45ff18aede"
+                }
+            ]
+        },
+        {
+            "name": "Afghani Murgh",
+            "description": "Tandoori chicken with a difference in flavour, style and method, baby chicken is marinated overnight in various herbs and spices along with yoghurt, fresh cream, almond paste to give that tender taste, then cooked in the tandoori oven & served with afresh salad.",
+            "amount": 6.8,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Chicken",
+            "identifier": "5fbff36d7cd30f45ff18aeec",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff36d7cd30f45ff18aeec"
+                }
+            ]
+        },
+        {
+            "name": "Amritsar Fish",
+            "description": "Fillet ofTilapiafish prepared in gramflour,ftesh homemade Indian spices &fresh mint leave, once the fish has been marinated. It is then deep fried and garnished with fresh coriander.",
+            "amount": 5.9,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Sea Food",
+            "identifier": "5fbff1bf7cd30f45ff18aee3",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff1bf7cd30f45ff18aee3"
+                }
+            ]
+        },
+        {
+            "name": "Chicken 65",
+            "description": "A Chennai speciality, batter fried spicy chicken marinated in butter milk, ginger, red chillies &garlic.",
+            "amount": 6.9,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Chicken",
+            "identifier": "5fbff3f37cd30f45ff18aeef",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff3f37cd30f45ff18aeef"
+                }
+            ]
+        },
+        {
+            "name": "Chicken Kali Mitch",
+            "description": "Let your taste buds run wild with this delicious starter, tender pieces of chicken breast marinated with black pepper, cream and home-made spices; cooked in charcoal flame and garnished with a sprinkle of crushed blackpepper.",
+            "amount": 6.8,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Chicken",
+            "identifier": "5fbff3a57cd30f45ff18aeed",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff3a57cd30f45ff18aeed"
+                }
+            ]
+        },
+        {
+            "name": "Chicken Pakora",
+            "description": "Tender julienne pieces of chicken marinated in ginger, garlic, lemon juice, Indian spices and gram flour coated and fried. Served with mint chutney & salad.",
+            "amount": 5.8,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Chicken",
+            "identifier": "5fbff3cd7cd30f45ff18aeee",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff3cd7cd30f45ff18aeee"
+                }
+            ]
+        },
+        {
+            "name": "Grilled Masala Tilapia",
+            "description": "Tilapia fillet marinated with garlic, ginger, lime juice, and selected Indian herbs, grilled in tawa. Served with chutney and salad.",
+            "amount": 6.5,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Sea Food",
+            "identifier": "5fbff2787cd30f45ff18aee7",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff2787cd30f45ff18aee7"
+                }
+            ]
+        },
+        {
+            "name": "Kandhari Kebab",
+            "description": "Fine minced lamb seasoned with aromatic Indian herbs and spices, then skewered and cooked in charcoal oven, served with a sprinkle of fresh coriander & mint sauce.",
+            "amount": 5.9,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Lamb",
+            "identifier": "5fbff2db7cd30f45ff18aee9",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff2db7cd30f45ff18aee9"
+                }
+            ]
+        },
+        {
+            "name": "KesariJhinga",
+            "description": "Shell-on tiger prawns marinated in yoghurt with lime and fresh coriander.",
+            "amount": 7.9,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Sea Food",
+            "identifier": "5fbff20d7cd30f45ff18aee4",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff20d7cd30f45ff18aee4"
+                }
+            ]
+        },
+        {
+            "name": "King Prawn Puri",
+            "description": "King Prawn fresh cooked in special Goan curry, served on a crispy on a crispy fried Poori.",
+            "amount": 6.5,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Sea Food",
+            "identifier": "5fbff0bc7cd30f45ff18aee1",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff0bc7cd30f45ff18aee1"
+                }
+            ]
+        },
+        {
+            "name": "Lamb Chops",
+            "description": "Selected cut oflamb chops, marinated in crushedgarlic, ginger, chilli and yoghurt charcoalgrilled.",
+            "amount": 6.9,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Lamb",
+            "identifier": "5fbff3017cd30f45ff18aeea",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff3017cd30f45ff18aeea"
+                }
+            ]
+        },
+        {
+            "name": "Murgh Tikka Karam",
+            "description": "This one is for all those chicken tikka lovers out there boneless pieces ofchicken breast marinated with ginger. garlic. yoghurt, and homemade Indian spices, garnished with freshly chopped coriander & served on a dressed platter.",
+            "amount": 6.8,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Chicken",
+            "identifier": "5fbff34e7cd30f45ff18aeeb",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff34e7cd30f45ff18aeeb"
+                }
+            ]
+        },
+        {
+            "name": "Peshwari Kebab",
+            "description": "A brilliant way to start your experience at Spice Bar & Grill, a must try starter, where tender chunks of lamb marinated overnight with yoghurt, cream, shahi zeera (black cumin) and Indian spices, cooked in charcoal oven, andgarnished with home-made massala andftesh coriander.",
+            "amount": 6.8,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Lamb",
+            "identifier": "5fbff2b77cd30f45ff18aee8",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff2b77cd30f45ff18aee8"
+                }
+            ]
+        },
+        {
+            "name": "Rapti Salmon",
+            "description": "A taste of this will definitely give you a Ropti start; marinated chunks: or salmon in honey, dill a homemade Indian spices cooked in charcoal oven a served with a sprinkle or fresh dill.",
+            "amount": 7.9,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Sea Food",
+            "identifier": "5fbff0937cd30f45ff18aee0",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff0937cd30f45ff18aee0"
+                }
+            ]
+        },
+        {
+            "name": "Samundari Ratan",
+            "description": "Mix sea food (squid, mussels, scallops and prawns) tossed in butter and cooked in sweet and spicy sauce served with salad and chutney.",
+            "amount": 7.9,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Sea Food",
+            "identifier": "5fbff2317cd30f45ff18aee5",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff2317cd30f45ff18aee5"
+                }
+            ]
+        },
+        {
+            "name": "Talichire Squid",
+            "description": "A rare starter Introduced by Spice Lounge, where rings of squid is fried with butter, selected home-made Indian herbs & delicate spices. tossed in mixed salad leaves and dressed with olive oil.",
+            "amount": 6.9,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Sea Food",
+            "identifier": "5fbff1727cd30f45ff18aee2",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff1727cd30f45ff18aee2"
+                }
+            ]
+        },
+        {
+            "name": "Tuna Ki Parchey",
+            "description": "Tuna fillet marinated in ginger, garlic, mustard, lime juice and grilled on tawa. served with mint chutney and salad.",
+            "amount": 7.9,
+            "type": "NonVeg",
+            "category": "STARTERS",
+            "subType": "Sea Food",
+            "identifier": "5fbff2547cd30f45ff18aee6",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff2547cd30f45ff18aee6"
+                }
+            ]
+        },
+        {
+            "name": "Aloo Moti Tikki",
+            "description": "Potato mashes delicately mixed with whole sabut dana, fresh Indian herbs and spices, and made into patties, and then coated in breadcrumbs, which is then deep flied and garnished with a sprinkle of homemade massala powder & served with mint sauce.",
+            "amount": 5.2,
+            "type": "Veg",
+            "category": "STARTERS",
+            "subType": "Veg",
+            "identifier": "5fbff4a17cd30f45ff18aef2",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff4a17cd30f45ff18aef2"
+                }
+            ]
+        },
+        {
+            "name": "Onion Bhaji",
+            "description": "A mixture of sliced onions, potatoes and spinach mixed with Indian spices and chick pea flour then deep  fried. Served with tamarind chutney.",
+            "amount": 5.2,
+            "type": "Veg",
+            "category": "STARTERS",
+            "subType": "Veg",
+            "identifier": "5fbff4da7cd30f45ff18aef3",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff4da7cd30f45ff18aef3"
+                }
+            ]
+        },
+        {
+            "name": "Paneer Ka Soola",
+            "description": "Enjoy a cheesy start, cubed pieces of Indian cottage cheese (paneer), onions and mixed peppers marinated with cream. yoghurt and herbs are cooked on a slow heat in the charcoal oven.",
+            "amount": 5.95,
+            "type": "Veg",
+            "category": "STARTERS",
+            "subType": "Veg",
+            "identifier": "5fbff45b7cd30f45ff18aef0",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff45b7cd30f45ff18aef0"
+                }
+            ]
+        },
+        {
+            "name": "Punjabi Samosa",
+            "description": "Carom seeds, flavoured short crust pastryfilled with spiced potato and green peas.",
+            "amount": 5.2,
+            "type": "Veg",
+            "category": "STARTERS",
+            "subType": "Veg",
+            "identifier": "5fbff47e7cd30f45ff18aef1",
+            "links": [
+                {
+                    "rel": "itemData",
+                    "href": "http://localhost:9090/v1/item/5fbff47e7cd30f45ff18aef1"
+                }
+            ]
+        }
+    ]
+}

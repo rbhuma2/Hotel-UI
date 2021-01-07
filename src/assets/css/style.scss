@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+    @apply font-semibold;
+}
+
+.grad_1 {
+    @apply bg-gradient-to-t from-red-500 to-yellow-500 text-white;
+    /* background: #800020;
+    @apply text-white; */
+}
+/* .grad_1 {
+//   @apply bg-gradient-to-t from-red-800 to-blue-300 text-white;
+// } */
+.grad_1_hover {
+    @apply bg-gradient-to-t hover:from-red-500 hover:to-yellow-500 hover:text-white;
+}
+.grad_2 {
+    @apply bg-gradient-to-r from-pink-100 to-blue-100;
+}
+.main-cat-box {
+    @apply w-auto h-8 flex justify-center items-center gap-2 rounded-md pr-4 pl-4 cursor-pointer;
+}
+.zoom-in {
+    @apply transform hover:scale-110 ease-in-out duration-300;
+}
+.sub-selected {
+    /* @apply border-b-4 border-red-500; */
+    @apply border-b-4;
+    border-color: #800020;
+    /* border-color: orangered; */
+}
+.sub-box {
+    @apply flex h-full items-center;
+}
+.bold {
+    @apply font-bold;
+}
+
+  /* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(161, 158, 158, 0.959);
+    /* @apply bg-yellow-800; */
+    /* @apply bg-gradient-to-t from-red-500 to-yellow-500 text-white; */
+      border-radius: 50px;
+    min-height: 4px;
+
+  }
+  .short-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical
+  }
+  .brandColor {
+    background: #800020;
+    color: white !important;
+  }
+  .borderColor {
+    border-color: #000000c9;
+  }
+  .popup-bg {
+    background: #000000c9;
+  }
+  /* ::-webkit-scrollbar-button {
+    width: 10px;
+    height: 20px;  } */

@@ -1,0 +1,77 @@
+<div class="main-main w-screen h-screen relative">
+    <div class="z-10 container right-panel-active" id="container2">
+        <div class="form-container sign-up-container">
+            <form #FeedbackForm="ngForm" (ngSubmit)="onBook(FeedbackForm.value)">
+                <h1 class="text-center mb-2 mt-3">Feedback</h1>
+                <!-- <span>or use your email for registration</span> -->
+                <input type="text" placeholder="First Name" name="firstName" ngModel />
+                <input type="text" placeholder="Last Name" name="lastName" ngModel />
+                <input type="email" placeholder="Email" name="email" ngModel />
+                <input type="text" placeholder="Phone" name="phoneNumber" ngModel />
+                <textarea type="text" class="w-full border-2 bg-gray-100 rounded-sm mt-4 pl-2" rows="5" name="description" placeholder="Description" ngModel></textarea>
+                <p class="text-danger text-red-900 p-0 h-8">
+                    <span class="text-md font-bold flex gap-2 items-center justify-center" *ngIf="_AlertmessageService && _AlertmessageService.globalErrorMessage">
+			
+                        <p><svg class="w-4 h-4 fill-current text-danger" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve">
+                       <g>
+                           <g>
+                               <g>
+                                   <rect x="192" y="192" width="42.667" height="128"/>
+                                   <path d="M213.333,0C95.467,0,0,95.467,0,213.333s95.467,213.333,213.333,213.333S426.667,331.2,426.667,213.333
+                                       S331.2,0,213.333,0z M213.333,384c-94.08,0-170.667-76.587-170.667-170.667S119.253,42.667,213.333,42.667
+                                       S384,119.253,384,213.333S307.413,384,213.333,384z"/>
+                                   <rect x="192" y="106.667" width="42.667" height="42.667"/>
+                               </g>
+                       
+                           </g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       <g>
+                       </g>
+                       </svg></p>
+                        <p class="text-danger text-red-900 p-0 font-extrabold">{{_AlertmessageService.globalErrorMessage}}</p>
+                      </span>
+                </p>
+                <button type="submit" class="mb-3">Submit</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Please let us know how you feel !</p>
+                    <!-- <button class="ghost" id="signIn">Sign In</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+	<img class="absolute top-0" src="../../../assets/homepage.JPG" alt="">
+</div>

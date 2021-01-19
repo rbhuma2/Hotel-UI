@@ -221,7 +221,7 @@ export class FoodMenuComponent implements OnInit {
       "amount": item.amount,
       "addOnItemList": addons,
       "specialNote": this.cartData.specialNote || item.specialNote,
-      "image" : item.image
+      "image" : this.cartData.image || item.image
     }
     console.log(itemData)
     if (((_type && identifier || this.isEditClicked) && _type !== 'new')  || this.isConfirmPopup) {
@@ -344,6 +344,7 @@ export class FoodMenuComponent implements OnInit {
     this.cartData.addons = item.addOnItemList
     this.cartData.spicyLevel = item.spiceLevel
     this.cartData.specialNote = item.specialNote;
+    this.cartData.image = item.image;
     this.popupData.quantity = item.quantity;
     if(this.isCancelConfirm) {
       item.netAmount = item.amount;

@@ -74,6 +74,7 @@ export class LoginComponent implements OnInit {
     this._ApiService.post('userValidate', formData).subscribe(response => {
       localStorage.setItem('email', formData.email)
       this._AlertmessageService.successAlert('Successfully Logged in!')
+      sessionStorage.setItem("isAdmin",response.admin)
       this._Router.navigate(['/menu'])
       this._AlertmessageService.errorMessageShow('');
       console.log(response)

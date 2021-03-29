@@ -1,15 +1,44 @@
 <div class="flex h-screen w-screen max-h-screen food-component">
-  <section class="flex flex-col gap-10 brandColor items-center pt-6 w-32 right-section slide"
-    [ngClass]="{'opened': navClicked}">
-    <a href="/"><img class="w-24 h-24 m-0 p-0" src="../../../assets/spicy-logo.png" alt="" srcset="">
-      <svg (click)="navClicked = !navClicked" class="absolute -right-12 top-4 h-4 w-4 my-3 mx-4 cursor-pointer"
+
+
+<!--navClicked for sub nav bar-->
+<section class="flex flex-col gap-10 brandColor_subnav items-center pt-6 w-32 right-section slide"
+    [ngClass]="{'opened': false}"><!-- navClicked -->
+   <!-- <svg (click)="navClicked = !navClicked" *ngIf="navClicked" class="absolute -right-12 top-4 h-4 w-4 my-3 mx-4 cursor-pointer"
         height="365.696pt" viewBox="0 0 365.696 365.696" width="365.696pt" xmlns="http://www.w3.org/2000/svg">
         <path
           d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0" />
-      </svg>
+      </svg>-->
+    
+    
+    <div class="grid gap-4 justify-center">
+      <p [routerLink]="['/feedback']" class="border-b-2 border-transparent hover:border-white cursor-pointer">Feedback
+      </p>
+      <p [routerLink]="['/reservation']" class="border-b-2 border-transparent hover:border-white cursor-pointer">Reserve
+        Table</p>
+      <p [routerLink]="['/login']" *ngIf="!userName"
+        class="border-b-2 border-transparent hover:border-white cursor-pointer">Login</p>
+    </div>
+  </section>
+
+  <!--sub nav bar code ends here-->
+
+
+
+
+
+
+  <section class="flex flex-col gap-10 brandColor items-center pt-6 w-32 right-section slide"
+    ><!--[ngClass]="{'opened': navClicked}"-->
+    <a href="/"><img class="w-24 h-24 m-0 p-0" src="../../../assets/spicy-logo.png" alt="" srcset="">
+      <!--<svg (click)="navClicked = !navClicked" class="absolute -right-12 top-4 h-4 w-4 my-3 mx-4 cursor-pointer"
+        height="365.696pt" viewBox="0 0 365.696 365.696" width="365.696pt" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0" />
+      </svg>-->
 
     </a>
-    <span class="flex gap-2 justify-center bg-white w-full">
+    <span class="flex gap-2 justify-center bg-white w-full" *ngIf="isMenuLink">
       <svg class="fill-current text-black w-4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 294.843 294.843"
         style="enable-background:new 0 0 294.843 294.843;" xml:space="preserve">
@@ -41,9 +70,52 @@
         <g></g>
         <g></g>
       </svg>
-      <p class="font-bold text-sm text-black padding-4">Menu</p>
+      <p class="font-bold text-sm text-black padding-4" (click)="menu()">Menu</p>
     </span>
-    <div class="grid gap-4 justify-center">
+    
+      <p *ngIf="!isMenuLink" class="font-bold text-sm text-black padding-4" (click)="menu()">Menu
+      </p>
+    
+    <span class="flex gap-2 justify-center bg-white w-full" style="margin-top: -39px;" *ngIf="!isMenuLink">
+      <svg class="fill-current text-black w-4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 294.843 294.843"
+        style="enable-background:new 0 0 294.843 294.843;" xml:space="preserve">
+        <g>
+          <path d="M147.421,0C66.133,0,0,66.133,0,147.421c0,40.968,17.259,80.425,47.351,108.255c2.433,2.25,6.229,2.101,8.479-0.331
+           c2.25-2.434,2.102-6.229-0.332-8.479C27.854,221.3,12,185.054,12,147.421C12,72.75,72.75,12,147.421,12
+           s135.421,60.75,135.421,135.421s-60.75,135.421-135.421,135.421c-3.313,0-6,2.687-6,6s2.687,6,6,6
+           c81.289,0,147.421-66.133,147.421-147.421S228.71,0,147.421,0z" />
+          <path
+            d="M84.185,90.185h126.473c3.313,0,6-2.687,6-6s-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6S80.872,90.185,84.185,90.185z" />
+          <path
+            d="M84.185,153.421h126.473c3.313,0,6-2.687,6-6s-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6S80.872,153.421,84.185,153.421z" />
+          <path d="M216.658,210.658c0-3.313-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6s2.687,6,6,6h126.473
+           C213.971,216.658,216.658,213.971,216.658,210.658z" />
+        </g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+        <g></g>
+      </svg>
+      <p class="font-bold text-sm text-black padding-4">Liquor</p>
+    </span>
+   
+      <p *ngIf="isMenuLink" class="font-bold text-sm text-black padding-4" style="margin-top: -39px;margin-bottom: -39px;" (click)="licker()">Liquor
+      </p>
+    
+    <div *ngIf="navClicked" class="grid gap-4 justify-center">
+      
       <p [routerLink]="['/feedback']" class="border-b-2 border-transparent hover:border-white cursor-pointer">Feedback
       </p>
       <p [routerLink]="['/reservation']" class="border-b-2 border-transparent hover:border-white cursor-pointer">Reserve
@@ -52,7 +124,11 @@
         class="border-b-2 border-transparent hover:border-white cursor-pointer">Login</p>
     </div>
   </section>
-  <div class="w-32">
+
+
+
+
+  <div class="w-32" style="margin-right: -20rem;">
     <svg (click)="navClicked = !navClicked" class="h-4 w-4 my-3 mx-4 cursor-pointer" height="384pt"
       viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -68,8 +144,8 @@
     <!-- MAIN CATEGORY  -->
     <!-- <p class="text-lg px-4 py-1 pt-2 hi mr-8 pl-0 mb-8"></p> -->
 
-    <p *ngIf="!navClicked" class="text-lg absolute top-2 left-14">Welcome {{userName ? userName: 'Guest'}}</p>
-    <div class="main-cat flex flex-row items-center gap-4 mt-12 justify-center">
+    <p  class="text-lg absolute top-2 left-14">Welcome {{userName ? userName: 'Guest'}}</p><!--*ngIf="!navClicked"-->
+    <div class="main-cat flex flex-row items-center gap-4 mt-12 justify-center" style="overflow: scroll;height: 2.8rem;">
       <div class="main-cat-box grad_1_hover zoom-in"
         [ngClass]="{'brandColor': catSelectedIndex == i , 'grad_2': catSelectedIndex !== i }"
         *ngFor="let item of categoryList; index as i" (click)="itemSelected(i, item.title, 'main')">
@@ -98,7 +174,7 @@
             <p class="font-normal text-sm p-1 short-text">{{item.description}}</p>
           </div>
           <div class="absolute flex justify-center -top-4 -right-2 w-12 h-12 rounded-full brandColor">
-            <p class="bold text-md text-center flex items-center justify-items-center text-white">£{{item.amount}}</p>
+            <p class="bold text-md text-center flex items-center justify-items-center text-white">€{{item.amount}}</p>
           </div>
           <!-- <span class="text-xs flex-shrink-0 p-1 pr-2 pl-2 grad_1 w-auto rounded-2xl">Add Meal</span> -->
         </div>
@@ -119,7 +195,7 @@
           <i class="fa fa-edit" (click)="onCartEdit(item)"></i>
           <div class="relative flex flex-col gap-2 items-center">
             <img src="../../../assets/menu-items/food.JPG" class="flex-grow-0 w-16 h-16 rounded-xl" alt="" srcset="">
-            <p>£{{item.amount*item.quantity}}</p>
+            <p>€{{item.amount*item.quantity}}</p>
           </div>
           <div class="content flex flex-col justify-between items-start flex-1 rounded-sm gap-1">
             <p class="text-black text-sm">{{item.name}}</p>
@@ -153,7 +229,7 @@
 
                 </div>
                 <div class="price">
-                  <p>£{{((item.amount ?item.amount: 0) + totalAddon(item.addOnItemList)) * item.quantity | number :
+                  <p>€{{((item.amount ?item.amount: 0) + totalAddon(item.addOnItemList)) * item.quantity | number :
                     '1.2-2'
                     }}</p>
                 </div>
@@ -233,17 +309,17 @@
       <div
         class="price-details  grad_2 shadow-2xl rounded-t-2xl w-full flex-none gap-4 flex flex-col p-4 justify-items-start"
         *ngIf="cartItems && cartItems.totalAmount !== 0">
-        <!-- <div class="flex flex-row justify-between">
+        <div class="flex flex-row justify-between">
           <p>Sub Total</p>
-          <p>£{{cartItems.subTotal}}</p>
+          <p>€{{cartItems.subTotal}}</p>
         </div>
         <div class="flex flex-row justify-between">
           <p>Tax</p>
-          <p>£{{cartItems.tax}}</p>
-        </div> -->
+          <p>€{{cartItems.tax}}</p>
+        </div>
         <div class="flex flex-row justify-between">
           <p>Total</p>
-          <p>£{{cartItems.totalAmount}}</p>
+          <p>€{{cartItems.totalAmount}}</p>
         </div>
         <div class="w-full cursor-pointer zoom-in gap-4 bg-red-800 h-12 flex items-center justify-center rounded-xl">
           <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -270,7 +346,7 @@
     <div class="m-container overflow-y-scroll ">
       <div class="header flex flex-col items-center pb-4">
         <p class="title">{{popupData['name']}}</p>
-        <p>Cost: £{{popupData['amount']}}</p>
+        <p>Cost: €{{popupData['amount']}}</p>
       </div>
       <!-- <div class="line h-1 border-red-800 opacity-20 border-dotted border-b-4 w-full "></div> -->
       <div class="spicy flex items-start flex-col">
@@ -311,7 +387,7 @@
                     (change)="onAddonSelect($event,item)" #checkboxes>
                   <div class="addon-price ml-2">
                     <p>{{item.name}}</p>
-                    <p>£{{item.amount}}</p>
+                    <p>€{{item.amount}}</p>
                   </div>
                 </label>
               </div>
@@ -328,7 +404,7 @@
     </div>
     <div class="flex items-center h-full justify-between pr-4 pl-4 bottom-bar w-full bg-red-800 shadow-2xl">
       <div class="total">
-        <p class="text-lg text-white">Total: £{{((cartItemSelectedData && cartItemSelectedData['netAmount'] &&
+        <p class="text-lg text-white">Total: €{{((cartItemSelectedData && cartItemSelectedData['netAmount'] &&
           cartItemSelectedData['netAmount'] > 0) ? cartItemSelectedData['netAmount']:
           popupData['amount']) | number : '1.2-2'}}</p>
       </div>

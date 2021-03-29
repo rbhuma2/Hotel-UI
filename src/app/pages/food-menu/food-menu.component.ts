@@ -13,6 +13,7 @@ export class FoodMenuComponent implements OnInit {
   @ViewChildren("checkboxes") checkboxes: QueryList<ElementRef>;
   navClicked : boolean = false
 
+  isMenuLink: boolean = true;
   menusList: Object = {};
   filter: boolean = false;
   categoryIconMap = {
@@ -23,9 +24,12 @@ export class FoodMenuComponent implements OnInit {
     "salads": '../../../assets/images/icons/roti.png',
     "bread/rotis": '../../../assets/images/icons/rice.png',
     "streetfoods": '../../../assets/images/icons/streetFood.png'
+    
   };
 
   categoryList: any = [];
+  liquorList: any = [];
+  menuList: any = []; 
   catSelectedIndex: number = 2;
   subCatSelectedIndex: number = 2;
   isEditClicked : boolean = false;
@@ -33,19 +37,10 @@ export class FoodMenuComponent implements OnInit {
   selectedData = {};
   popupData: any = {};
   isPopupShow = false;
-  subCat = [
-  ];
+  subCat = [];
   finalResults = [];
-  cartItems: any = {
-    itemList: [],
-    totalAmount: 0,
-    tax: 0,
-    // subTotal: 0,
-    email: '',
-    identifier:''
-
-  };
-  startersData = []
+  cartItems: any = [];
+  startersData = [];
   showStarters: Boolean = false
   cartData: any = { spicyLevel: 'none', type: '', addons: [] }
   addonsData = {}
@@ -56,6 +51,7 @@ export class FoodMenuComponent implements OnInit {
   isCancelConfirm: Boolean = false;
   constructor(private _ApiService: ApiService, private _AlertmessageService: AlertmessageService) {
   }
+  categoryTestData: any ={};
 
   ngOnInit(): void {
     this.isCancelConfirm = false;
@@ -67,13 +63,43 @@ export class FoodMenuComponent implements OnInit {
   }
 
   getCategories() {
+// test data start
+/*let category = this.categoryTestData.content;
+ for (let counter = 0; counter <= this.categoryTestData.content.length; counter++) {
+  this.categoryList.push({
+    title: 'streetfoods',//this.categoryTestData.content[counter].content,
+   url: this.categoryIconMap['streetfoods']
+  })
+}
+    
+    this.getMenuList()*/
+// test data end
     this._ApiService.getCategoryList('category').subscribe((res: any) => {
       res.content.map(e => {
         let category = e.content
-        this.categoryList.push({
+        //let itemType = e.itemType;
+        if(category == "Steaks"){
+          this.menuList.push({
+            title: category,
+            url: this.categoryIconMap[category.toLowerCase()]
+          })
+        }else{
+          this.liquorList.push({
+            title: category,
+            url: this.categoryIconMap[category.toLowerCase()]
+          })
+        
+        }
+        if(this.isMenuLink){
+          this.categoryList = this.menuList;
+        }else{
+          this.categoryList = this.liquorList;
+        }
+       // this.categoryList =
+        /*this.categoryList.push({
           title: category,
           url: this.categoryIconMap[category.toLowerCase()]
-        })
+        })*/
       })
       this.getMenuList()
     }, e => {
@@ -221,7 +247,7 @@ export class FoodMenuComponent implements OnInit {
       "amount": item.amount,
       "addOnItemList": addons,
       "specialNote": this.cartData.specialNote || item.specialNote,
-      "image" : this.cartData.image || item.image
+      "image" : item.image
     }
     console.log(itemData)
     if (((_type && identifier || this.isEditClicked) && _type !== 'new')  || this.isConfirmPopup) {
@@ -344,7 +370,6 @@ export class FoodMenuComponent implements OnInit {
     this.cartData.addons = item.addOnItemList
     this.cartData.spicyLevel = item.spiceLevel
     this.cartData.specialNote = item.specialNote;
-    this.cartData.image = item.image;
     this.popupData.quantity = item.quantity;
     if(this.isCancelConfirm) {
       item.netAmount = item.amount;
@@ -424,4 +449,29 @@ export class FoodMenuComponent implements OnInit {
     })
   }
 
+  menu(){
+    
+    this.isMenuLink = true;
+    let category = this.categoryTestData.content;
+ /*for (let counter = 0; counter <= this.categoryTestData.content.length; counter++) {
+  this.categoryList.push({
+    title: 'streetfoods',//this.categoryTestData.content[counter].content,
+   url: this.categoryIconMap['streetfoods']
+  })
+}*/
+this.categoryList = this.menuList;
+    
+  }
+  licker(){
+    this.isMenuLink = false;
+    let category = this.categoryTestData.content;
+    /*for (let counter = 0; counter <= this.categoryTestData.content.length; counter++) {
+      this.categoryList.push({
+        title: 'Licker '+counter,//this.categoryTestData.content[counter].content,
+      url: this.categoryIconMap['streetfoods']
+      })
+    }*/
+    //this.subCat = [];
+  this.categoryList = this.liquorList;
+  }
 }

@@ -24,7 +24,6 @@ export class FoodMenuComponent implements OnInit {
     "salads": '../../../assets/images/icons/roti.png',
     "bread/rotis": '../../../assets/images/icons/rice.png',
     "streetfoods": '../../../assets/images/icons/streetFood.png'
-    
   };
 
   categoryList: any = [];
@@ -37,10 +36,19 @@ export class FoodMenuComponent implements OnInit {
   selectedData = {};
   popupData: any = {};
   isPopupShow = false;
-  subCat = [];
+  subCat = [
+  ];
   finalResults = [];
-  cartItems: any = [];
-  startersData = [];
+  cartItems: any = {
+    itemList: [],
+    totalAmount: 0,
+    tax: 0,
+    // subTotal: 0,
+    email: '',
+    identifier:''
+
+  };
+  startersData = []
   showStarters: Boolean = false
   cartData: any = { spicyLevel: 'none', type: '', addons: [] }
   addonsData = {}
@@ -51,7 +59,6 @@ export class FoodMenuComponent implements OnInit {
   isCancelConfirm: Boolean = false;
   constructor(private _ApiService: ApiService, private _AlertmessageService: AlertmessageService) {
   }
-  categoryTestData: any ={};
 
   ngOnInit(): void {
     this.isCancelConfirm = false;
@@ -63,17 +70,6 @@ export class FoodMenuComponent implements OnInit {
   }
 
   getCategories() {
-// test data start
-/*let category = this.categoryTestData.content;
- for (let counter = 0; counter <= this.categoryTestData.content.length; counter++) {
-  this.categoryList.push({
-    title: 'streetfoods',//this.categoryTestData.content[counter].content,
-   url: this.categoryIconMap['streetfoods']
-  })
-}
-    
-    this.getMenuList()*/
-// test data end
     this._ApiService.getCategoryList('category').subscribe((res: any) => {
       res.content.map(e => {
         let category = e.content
@@ -96,10 +92,10 @@ export class FoodMenuComponent implements OnInit {
           this.categoryList = this.liquorList;
         }
        // this.categoryList =
-        /*this.categoryList.push({
+        this.categoryList.push({
           title: category,
           url: this.categoryIconMap[category.toLowerCase()]
-        })*/
+        })
       })
       this.getMenuList()
     }, e => {
@@ -452,7 +448,7 @@ export class FoodMenuComponent implements OnInit {
   menu(){
     
     this.isMenuLink = true;
-    let category = this.categoryTestData.content;
+    //let category = this.categoryTestData.content;
  /*for (let counter = 0; counter <= this.categoryTestData.content.length; counter++) {
   this.categoryList.push({
     title: 'streetfoods',//this.categoryTestData.content[counter].content,
@@ -464,7 +460,7 @@ this.categoryList = this.menuList;
   }
   licker(){
     this.isMenuLink = false;
-    let category = this.categoryTestData.content;
+    //let category = this.categoryTestData.content;
     /*for (let counter = 0; counter <= this.categoryTestData.content.length; counter++) {
       this.categoryList.push({
         title: 'Licker '+counter,//this.categoryTestData.content[counter].content,

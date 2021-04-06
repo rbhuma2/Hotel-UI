@@ -19,7 +19,9 @@ import { PaymentComponent } from './pages/payment/payment.component';
 import { ConfirmationComponent } from './pages/confirmation/confirmation.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
-
+import { NgxStripeModule } from 'ngx-stripe';
+import { CreateTokenComponent } from './pages/create-token/create-token.component';
+import { PaymentRequestButtonComponent } from './pages/payment-request-button/payment-request-button.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,13 +35,16 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     PaymentComponent,
     ConfirmationComponent,
     FeedbackComponent,
+    CreateTokenComponent,
+    PaymentRequestButtonComponent,
 
   ],
   imports: [
     BrowserModule,
     MatTabsModule,
     AppRoutingModule,HttpClientModule,FormsModule,ReactiveFormsModule,BrowserAnimationsModule,NgxSpinnerModule,ToastrModule.forRoot(),
-    IvyCarouselModule
+    IvyCarouselModule,
+    NgxStripeModule.forRoot('pk_test_51I0tBLHjDycGB3bI5KY701EORzL4a4Fwzu7LfhhlzvfDgA2Ifo1rYhutDHaFNvR6i0CZqp0AplSYBQcHSTwXM0CQ00kkW6q5V1'),
   ],
   providers: [],
   bootstrap: [AppComponent],

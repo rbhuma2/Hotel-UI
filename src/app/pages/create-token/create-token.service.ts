@@ -11,7 +11,10 @@ export class CreateTokenService {
   ) { }
 
   public sendPaymentInfoToBackend(payload) {
-    return this.http.post<any>("http://localhost:9090/v1/charge", payload);
+    let headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    }); 
+    return this.http.post<any>("http://localhost:9090/v1/charge", payload, {'headers': headers});
   }
 
   /*public sendPaymentConfirmation(payload) {

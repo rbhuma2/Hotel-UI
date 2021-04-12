@@ -22,6 +22,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { NgxStripeModule } from 'ngx-stripe';
 import { CreateTokenComponent } from './pages/create-token/create-token.component';
 import { PaymentRequestButtonComponent } from './pages/payment-request-button/payment-request-button.component';
+import { FailureComponent } from './pages/failure/failure.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,8 @@ import { PaymentRequestButtonComponent } from './pages/payment-request-button/pa
     FeedbackComponent,
     CreateTokenComponent,
     PaymentRequestButtonComponent,
+    ConfirmationComponent,
+    FailureComponent
 
   ],
   imports: [

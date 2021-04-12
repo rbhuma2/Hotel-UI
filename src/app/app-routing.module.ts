@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MainComponent } from './pages/main/main.component';
 import { PaymentComponent } from './pages/payment/payment.component';
+import { FailureComponent } from './pages/failure/failure.component';
 
 // { path: '', redirectTo: 'main', pathMatch: 'full' },
 // { path: '**', redirectTo: 'main' },
@@ -22,7 +23,8 @@ const routes: Routes = [
       { path: 'login', component: LoginComponent },
       { path: 'payment', component: PaymentComponent },
       { path: 'confirmation', component: ConfirmationComponent },
-      { path: 'feedback', component: FeedbackComponent }
+      { path: 'feedback', component: FeedbackComponent },
+      { path: 'failure', component: FailureComponent }
     ]
   },
 ];

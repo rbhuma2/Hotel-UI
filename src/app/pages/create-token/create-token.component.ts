@@ -24,13 +24,13 @@ export class CreateTokenComponent implements OnInit {
   cardOptions: StripeCardElementOptions = {
     style: {
       base: {
-        iconColor: '#666EE8',
-        color: '#31325F',
-        fontWeight: '300',
+        iconColor: '#1B1717',
+        color: '#1B1717',
+        fontWeight: '500',
         fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
         fontSize: '18px',
         '::placeholder': {
-          color: '#CFD7E0'
+          color: 'black'
         }
       }
     }
@@ -82,25 +82,14 @@ export class CreateTokenComponent implements OnInit {
           }
 
           /** Sending the generated token and price to the backend charges API to complete the transaction */
-          this.createTokenService.sendPaymentInfoToBackend(requestObject).subscribe(response => {
-            /*if(response) {
-              this.transaction_id = response.transaction_id;
-              this.isProcessed = true;
-            }
-
-            let requestObjectpayment = {
-              "transaction_id" :  this.transaction_id,
-              "isProcessed"    : this.isProcessed,
-              "id"             : this.identifier
-              }
-         
-          this.createTokenService.sendPaymentConfirmation(requestObjectpayment).subscribe(response => {
-              
-          });*/
-          console.log(response);
-          this._Router.navigate(['/menu']);
-
-        });
+          this.createTokenService.sendPaymentInfoToBackend(requestObject).subscribe((response) => {
+            console.log(response.status);
+            /** Redirecting user back to confirmation page */
+            this._Router.navigate(['/confirmation']);
+          },  (_error) => {
+            this._Router.navigate(['/failure']);
+          }
+        );
        } else if (result.error) {
           // Error creating the token
           console.log(result.error.message);

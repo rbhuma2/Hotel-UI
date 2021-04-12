@@ -2,11 +2,11 @@
 <div class="row">
   <div class="container">
   <div class="submit-buton">
-    <h1>Payment</h1>
+    <p class="text-center text-payment">Payment<p>
   </div>
   </div>
 </div>
-<br> <br> <br>
+<br> <br>
 <!-- <div class="row">
   <div class="col-3">
   </div>
@@ -17,18 +17,26 @@
     <input type="text" class="form-control" placeholder="Last name">
   </div>
 </div> -->
-
+<br>
 <div class="row">
+  <div class="col-3">
+</div>
+  <div class="col-6">
+  <p class="text-nowrap amt">Amount  : € {{amount}} <p>
+</div>
+</div>
+<br>
+<div class="strpay" style="background-color: #e6ebeeea;">
+  <div class="row">
   <div class="col-3">
   </div>
 <div class="col-6">
   <input type="text" class="form-control" placeholder="Card Holder name">
 </div>
 </div>
+<br>
 
-<br>
-<br>
-<div class="row">
+<div class="row text-centre strpay">
   <div class="col-3">
   </div>
   <div class="col-6">
@@ -37,13 +45,22 @@
     [elementsOptions]="elementsOptions">
   </ngx-stripe-card>
   </div>
-  <br>
+</div>
+
+<div class="row">
+  <div class="col-3">
+  </div>
+<div class="col-3">
+  <input type="text" class="form-control" placeholder="Country">
+</div>
+</div>
+
 </div>
 <br>
 <div class="container">
 <div class="submit-buton">
-  <button type="submit" class="btn btn-primary" (click)="createToken()">
-        PAY NOW
+  <button type="submit" class="btn mb-3 pay-button" (click)="createToken()">
+       <strong> PAY NOW</strong>
   </button>
 </div>
 </div>

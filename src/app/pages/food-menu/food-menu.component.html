@@ -1,56 +1,86 @@
 <div class="flex h-screen w-screen max-h-screen food-component">
   <section class="flex flex-col gap-10 brandColor items-center pt-6 w-32 right-section slide"
-    [ngClass]="{'opened': navClicked}">
+    [ngClass]="{'opened': true}">
     <a href="/"><img class="w-24 h-24 m-0 p-0" src="../../../assets/spicy-logo.png" alt="" srcset="">
-      <svg (click)="navClicked = !navClicked" class="absolute -right-12 top-4 h-4 w-4 my-3 mx-4 cursor-pointer"
+      <!-- <svg (click)="navClicked = !navClicked" class="absolute -right-12 top-4 h-4 w-4 my-3 mx-4 cursor-pointer"
         height="365.696pt" viewBox="0 0 365.696 365.696" width="365.696pt" xmlns="http://www.w3.org/2000/svg">
         <path
           d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0" />
-      </svg>
+      </svg> -->
 
     </a>
-    <span class="flex gap-2 justify-center bg-white w-full">
-      <svg class="fill-current text-black w-4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 294.843 294.843"
-        style="enable-background:new 0 0 294.843 294.843;" xml:space="preserve">
-        <g>
-          <path d="M147.421,0C66.133,0,0,66.133,0,147.421c0,40.968,17.259,80.425,47.351,108.255c2.433,2.25,6.229,2.101,8.479-0.331
-           c2.25-2.434,2.102-6.229-0.332-8.479C27.854,221.3,12,185.054,12,147.421C12,72.75,72.75,12,147.421,12
-           s135.421,60.75,135.421,135.421s-60.75,135.421-135.421,135.421c-3.313,0-6,2.687-6,6s2.687,6,6,6
-           c81.289,0,147.421-66.133,147.421-147.421S228.71,0,147.421,0z" />
-          <path
-            d="M84.185,90.185h126.473c3.313,0,6-2.687,6-6s-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6S80.872,90.185,84.185,90.185z" />
-          <path
-            d="M84.185,153.421h126.473c3.313,0,6-2.687,6-6s-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6S80.872,153.421,84.185,153.421z" />
-          <path d="M216.658,210.658c0-3.313-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6s2.687,6,6,6h126.473
-           C213.971,216.658,216.658,213.971,216.658,210.658z" />
-        </g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-        <g></g>
-      </svg>
-      <p class="font-bold text-sm text-black padding-4">Menu</p>
-    </span>
-    <div class="grid gap-4 justify-center">
+
+    <!-- <a style="height:10px" (click)="menu()" class="nav-link" style="cursor: pointer;">
+      <span class="flex gap-2 justify-center  w-full">
+        <svg class="fill-current text-black w-4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 294.843 294.843"
+          style="enable-background:new 0 0 294.843 294.843;" xml:space="preserve">
+          <g>
+            <path d="M147.421,0C66.133,0,0,66.133,0,147.421c0,40.968,17.259,80.425,47.351,108.255c2.433,2.25,6.229,2.101,8.479-0.331
+             c2.25-2.434,2.102-6.229-0.332-8.479C27.854,221.3,12,185.054,12,147.421C12,72.75,72.75,12,147.421,12
+             s135.421,60.75,135.421,135.421s-60.75,135.421-135.421,135.421c-3.313,0-6,2.687-6,6s2.687,6,6,6
+             c81.289,0,147.421-66.133,147.421-147.421S228.71,0,147.421,0z" />
+            <path
+              d="M84.185,90.185h126.473c3.313,0,6-2.687,6-6s-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6S80.872,90.185,84.185,90.185z" />
+            <path
+              d="M84.185,153.421h126.473c3.313,0,6-2.687,6-6s-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6S80.872,153.421,84.185,153.421z" />
+            <path d="M216.658,210.658c0-3.313-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6s2.687,6,6,6h126.473
+             C213.971,216.658,216.658,213.971,216.658,210.658z" />
+          </g>
+         
+        </svg>
+        <p class="font-bold text-sm text-black padding-4">Menu</p> 
+      </span>
+    </a>
+    <a tabindex="1" (click)="liquor()"  style="cursor: pointer;">
+      <span class="flex gap-2 justify-center w-full">
+        <svg class="fill-current text-black w-4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 294.843 294.843"
+          style="enable-background:new 0 0 294.843 294.843;" xml:space="preserve">
+          <g>
+            <path d="M147.421,0C66.133,0,0,66.133,0,147.421c0,40.968,17.259,80.425,47.351,108.255c2.433,2.25,6.229,2.101,8.479-0.331
+             c2.25-2.434,2.102-6.229-0.332-8.479C27.854,221.3,12,185.054,12,147.421C12,72.75,72.75,12,147.421,12
+             s135.421,60.75,135.421,135.421s-60.75,135.421-135.421,135.421c-3.313,0-6,2.687-6,6s2.687,6,6,6
+             c81.289,0,147.421-66.133,147.421-147.421S228.71,0,147.421,0z" />
+            <path
+              d="M84.185,90.185h126.473c3.313,0,6-2.687,6-6s-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6S80.872,90.185,84.185,90.185z" />
+            <path
+              d="M84.185,153.421h126.473c3.313,0,6-2.687,6-6s-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6S80.872,153.421,84.185,153.421z" />
+            <path d="M216.658,210.658c0-3.313-2.687-6-6-6H84.185c-3.313,0-6,2.687-6,6s2.687,6,6,6h126.473
+             C213.971,216.658,216.658,213.971,216.658,210.658z" />
+          </g>
+        </svg>
+        <p class="font-bold text-sm text-black padding-4">Liquors</p> 
+  
+      </span>
+    </a> -->
+    
+    <ul class="navbar-nav">
+      <li style="width: 130px;" class="nav-item ">
+        <a (click)="menu()" class="nav-link" >
+          <span style="font-weight: 900;padding-left: 30px;" >  Menu</span>
+          
+      
+
+        </a> 
+      </li>
+      <li class="nav-item">
+        <a (click)="liquor()" class="nav-link" >
+          <span style="font-weight: 900;padding-left: 30px;" > Liquor</span>
+        </a>
+      </li>
+     
+    </ul>
+   
+
+    <!-- <div class="grid gap-4 justify-center">
       <p [routerLink]="['/feedback']" class="border-b-2 border-transparent hover:border-white cursor-pointer">Feedback
       </p>
       <p [routerLink]="['/reservation']" class="border-b-2 border-transparent hover:border-white cursor-pointer">Reserve
         Table</p>
       <p [routerLink]="['/login']" *ngIf="!userName"
         class="border-b-2 border-transparent hover:border-white cursor-pointer">Login</p>
-    </div>
+    </div> -->
   </section>
   <div class="w-32">
     <svg (click)="navClicked = !navClicked" class="h-4 w-4 my-3 mx-4 cursor-pointer" height="384pt"
@@ -68,7 +98,7 @@
     <!-- MAIN CATEGORY  -->
     <!-- <p class="text-lg px-4 py-1 pt-2 hi mr-8 pl-0 mb-8"></p> -->
 
-    <p *ngIf="!navClicked" class="text-lg absolute top-2 left-14">Welcome {{userName ? userName: 'Guest'}}</p>
+    <p *ngIf="!navClicked" style="padding-left: 100px;" class="text-lg absolute top-2 left-14">Welcome {{userName ? userName: 'Guest'}}</p>
     <div class="main-cat flex flex-row items-center gap-4 mt-12 justify-center">
       <div class="main-cat-box grad_1_hover zoom-in"
         [ngClass]="{'brandColor': catSelectedIndex == i , 'grad_2': catSelectedIndex !== i }"
@@ -251,7 +281,7 @@
             <path
               d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z" />
           </svg>
-          <a class="text-white font-bold" routerLink="/payment">Check Out</a>
+          <a class="text-white font-bold" (click)="checkOut()">Check Out</a>
         </div>
       </div>
     </div>
@@ -273,7 +303,7 @@
         <p>Cost: €{{popupData['amount']}}</p>
       </div>
       <!-- <div class="line h-1 border-red-800 opacity-20 border-dotted border-b-4 w-full "></div> -->
-      <div class="spicy flex items-start flex-col">
+      <div *ngIf="!isLiquor" class="spicy flex items-start flex-col">
         <p class="text-lg px-4 popup-head">Spicy Level</p>
         <div class="flex pl-4 flex-col  mt-2">
           <label class="inline-flex items-center">

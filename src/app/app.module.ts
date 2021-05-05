@@ -23,6 +23,8 @@ import { NgxStripeModule } from 'ngx-stripe';
 import { CreateTokenComponent } from './pages/create-token/create-token.component';
 import { PaymentRequestButtonComponent } from './pages/payment-request-button/payment-request-button.component';
 import { FailureComponent } from './pages/failure/failure.component';
+import { AvailableOrdersComponent } from './pages/available-orders/available-orders.component';
+import { KeysPipe } from './pages/available-orders/keys.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +41,9 @@ import { FailureComponent } from './pages/failure/failure.component';
     CreateTokenComponent,
     PaymentRequestButtonComponent,
     ConfirmationComponent,
-    FailureComponent
+    FailureComponent,
+    AvailableOrdersComponent,
+    KeysPipe
 
   ],
   imports: [

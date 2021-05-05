@@ -1,7 +1,15 @@
 <ul class='header-menus'>
+
     <li>
         <a routerLink="" routerLinkActive="active" style="text-decoration: none;" *ngIf="isAdmin"> ADMIN</a>
     </li>
+    <li>
+        <a routerLink="/orders" routerLinkActive="active" style="text-decoration: none;" *ngIf="isAdmin"> Available Orders</a>
+    </li>
+    <li>
+        <a routerLink="/login" routerLinkActive="active" style="text-decoration: none;" *ngIf="isAdmin"> Make Admin</a>
+    </li>
+
     <li>
         <a routerLink="/home" routerLinkActive="active" style="text-decoration: none;"> Home</a>
     </li>
@@ -16,6 +24,9 @@
         <a routerLink="/feedback" style="text-decoration: none;">FeedBack</a>
     </li>
     <li>
-        <a routerLink="/login" style="text-decoration: none;">Login</a>
+        <a routerLink="/login" style="text-decoration: none;" *ngIf="!isLogin()">Login</a>
+    </li>
+    <li>
+        <a (click)="logout()" style="text-decoration: none;" *ngIf="isLogin()">Log Out</a>
     </li>
 </ul>

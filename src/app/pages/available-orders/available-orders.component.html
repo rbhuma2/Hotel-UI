@@ -1,0 +1,103 @@
+<img src="../../../assets/homepage.JPG" alt="" class="pic-fixed">
+
+<div class="cards" style="display: flex; flex-wrap: wrap;">
+    <!-- <ng-container  class="col-lg-4 col-md-4 col-sm-6 col-xs-12"
+        *ngFor = "let order of availableOrders"
+    > -->
+    <!-- <a href="#" (click)="fetchingOrderDetails" data-toggle="modal" data-target="#exampleModal">
+        <div class="card" style="width:18rem">
+            <img  class="card-image-top" src="../../../assets/1.JPG" alt="Card Image Cap">
+            <div class="card-body">
+                <p>
+                    Identifier : <span>{{order.identifier}}</span>
+                </p>
+            </div>
+        </div>
+    </a> -->
+
+   <ul *ngFor = "let order of availableOrders">
+       <li style="padding-left: 200px;">
+           <div style="color: black;" class="cardStyle">
+            <div style="background-color:whitesmoke;
+            border: 1px solid black;
+            opacity: 0.9;
+            filter: alpha(opacity=90);
+            width: 1200px;" class="card">
+            <div class="card-body">
+                <span style="padding-left: 20px; font-weight: 800;">OrderId : {{order.identifier}}</span>  &nbsp; &nbsp; 
+                <span style="padding-left: 20px; font-weight: 800;">OrderPlaceDate : {{order.orderPlaceDate}}</span><br> <br>
+                <span style="padding-left: 20px; font-weight: 800;">User Name : {{order.name}}</span>  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                <span style="padding-left: 20px; font-weight: 800;">Contact Number : {{order.phoneNumber}}</span><br> <br>
+              
+                <div style="padding-left: 20px;">
+                    <button type="button" class="btn btn-info" data-toggle="modal" (click)="fetchOrderDetails(order)" data-target="#exampleModal">
+                        Details
+                      </button> &nbsp; &nbsp;
+                    <button type="button" class="btn btn-success" (click)="onSuccess(order)">Approve</button> &nbsp; &nbsp;
+                    <!-- <button type="button" class="btn btn-danger" (click)="onDeny()">Deny</button> -->
+                </div>
+            </div>
+            </div>
+           </div>
+       </li>
+   </ul>
+</div>
+
+  
+
+  <div class="modal fade" id="exampleModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" style="font-weight: 900;">Order Details</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" style="padding-top: -100px;">
+            <div class="card-body" style="text-align:start">
+                <span style=" font-weight: 800;">OrderId &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;&nbsp;{{currentOrderDetails.identifier}}</span> <br> 
+                <span style=" font-weight: 800;">OrderPlaceDate :&nbsp;&nbsp;&nbsp;{{currentOrderDetails.orderPlaceDate}}</span><br>
+                <span style=" font-weight: 800;">Total Items &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;{{currentOrderDetails.totalItems}}</span><br> 
+    
+                <span style=" font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Item Details</span>
+                  <table>
+                    <thead>
+                      <tr>           
+                        <th *ngFor="let head of items[0] | keys">{{head}}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of items">           
+                        <td *ngFor="let list of item | keys">{{item[list]}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <span style=" font-weight: 800;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AddOn Details</span>
+                  <table>
+                    <thead>
+                      <tr>           
+                        <th *ngFor="let head of addOns[0] | keys">{{head}}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of addOns">           
+                        <td *ngFor="let list of item | keys">{{item[list]}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 
+            </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer" style="padding-left: -50px;">
+            <button type="button" class="btn btn-success" (click)="onSuccess(currentOrderDetails)">Approve</button>
+            <!-- <button type="button" class="btn btn-danger" (click)="onDeny()">Deny</button> -->
+        </div>
+        
+      </div>
+    </div>
+  </div>

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
 import { environment } from 'src/environments/environment';
 import { of } from "rxjs";
 
@@ -32,6 +32,12 @@ export class ApiService {
     return this.http.post<any>(this.url + route, body)
   }
 
+  makeAdmin(route, body = {}){
+    let email = localStorage.getItem('email') || ""
+    let headers = new HttpHeaders({ 'X-User-Id': email });
+    return this.http.post<any>(this.url + route, body, { headers})
+  }
+
   item(route, body = {}) {
     let email = localStorage.getItem('email') || ""
     let headers = new HttpHeaders({ 'X-User-Id': email });
@@ -50,17 +56,54 @@ export class ApiService {
     return this.http.get<any>(this.url + route, { headers })
   }
 
-  getCategoryList(route) {
+  getMenuCategoryList(route) {
     let email = localStorage.getItem('email') || ""
     let headers = new HttpHeaders({ 'X-User-Id': email });
-    return this.http.get<any>(this.url + route, { headers })
+    const httpParams:HttpParams = new HttpParams();
+  
+    return this.http.get<any>(this.url + route +'?item=Menu', { headers})
+  }
+
+  getLiquorCategoryList(route) {
+    let email = localStorage.getItem('email') || ""
+    let headers = new HttpHeaders({ 'X-User-Id': email });
+    const httpParams:HttpParams = new HttpParams();
+   
+    return this.http.get<any>(this.url + route +'?item=Liqueur', { headers})
   }
 
   getMenuList(route) {
     let email = localStorage.getItem('email') || ""
     let headers = new HttpHeaders({ 'X-User-Id': email });
-    //url = "http://localhost:9090/v1/menuItem?filters=category:&page=1&size=100";
-    return this.http.get<any>(this.url+"menuItem?filters=category:&page=1&size=1000", { headers })
+    return this.http.get<any>(this.url+"menuItem?filters=item:Menu&page=1&size=1000", { headers })
+  }
+
+  getLiquorList(route) {
+    let email = localStorage.getItem('email') || ""
+    let headers = new HttpHeaders({ 'X-User-Id': email });
+    return this.http.get<any>(this.url+"menuItem?filters=item:Liqueur&page=1&size=1000", { headers })
+  }
+
+  getAvailableOrders(route){
+    let email = localStorage.getItem('email') || ""
+    let headers = new HttpHeaders({ 'X-User-Id': email });
+    return this.http.get<any>(this.url+route, { headers })
+  }
+
+  getOrderDetails(route){
+    console.log(route)
+    let email = localStorage.getItem('email') || ""
+    let headers = new HttpHeaders({ 'X-User-Id': email });
+    return this.http.get<any>(this.url+route, { headers })
+  }
+
+  approveOrder(id, isProcessed){
+    let email = localStorage.getItem('email') || ""
+    let headers = new HttpHeaders({ 'X-User-Id': email });
+    let data = {
+      isProcessed : isProcessed
+    }
+    return this.http.patch<any>(this.url+"cart/"+id, data, { headers })
   }
 
 }

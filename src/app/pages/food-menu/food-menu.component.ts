@@ -2,6 +2,7 @@ import { iif } from 'rxjs';
 import { AlertmessageService } from 'src/app/alertmessage.service';
 import { ApiService } from 'src/app/api.service';
 import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -28,11 +29,13 @@ export class FoodMenuComponent implements OnInit {
 
   categoryList: any = [];
   liquorList: any = [];
-  menuList: any = []; 
+  menuList: any = [];
+  liquorMenusList: any = [];
   catSelectedIndex: number = 2;
   subCatSelectedIndex: number = 2;
   isEditClicked : boolean = false;
   foodData = {};
+  liquorData = {};
   selectedData = {};
   popupData: any = {};
   isPopupShow = false;
@@ -57,7 +60,10 @@ export class FoodMenuComponent implements OnInit {
   userName = '';
   cartItemSelectedData = {};
   isCancelConfirm: Boolean = false;
-  constructor(private _ApiService: ApiService, private _AlertmessageService: AlertmessageService) {
+  isLiquor = false;
+  constructor(private _ApiService: ApiService,
+     private _AlertmessageService: AlertmessageService,
+     private router:Router) {
   }
 
   ngOnInit(): void {
@@ -66,46 +72,59 @@ export class FoodMenuComponent implements OnInit {
     this.getCart()
     this.userName = localStorage.getItem('name');
     this._AlertmessageService.errorMessageShow('');
+    this.menu();
 
+   
   }
 
   getCategories() {
-    this._ApiService.getCategoryList('category').subscribe((res: any) => {
+    this._ApiService.getMenuCategoryList('category').subscribe((res: any) => {
       res.content.map(e => {
         let category = e.content
         //let itemType = e.itemType;
-        if(category == "Steaks"){
+        console.log(category, 'menu')
           this.menuList.push({
             title: category,
             url: this.categoryIconMap[category.toLowerCase()]
           })
-        }else{
-          this.liquorList.push({
-            title: category,
-            url: this.categoryIconMap[category.toLowerCase()]
-          })
-        
-        }
-        if(this.isMenuLink){
-          this.categoryList = this.menuList;
-        }else{
-          this.categoryList = this.liquorList;
-        }
-       // this.categoryList =
-        this.categoryList.push({
-          title: category,
-          url: this.categoryIconMap[category.toLowerCase()]
-        })
       })
       this.getMenuList()
     }, e => {
       console.log(e)
     })
+    this._ApiService.getLiquorCategoryList('category').subscribe((res: any) => {
+      res.content.map(e => {
+        let category = e.content
+        //let itemType = e.itemType;
+        console.log(category, 'liquorlist')
+          this.liquorList.push({
+            title: category,
+            url: this.categoryIconMap[category.toLowerCase()]
+          })
+      })
+      this.getLiquorList()
+    }, e => {
+      console.log(e)
+    })
+  }
+
+  getLiquorList(){
+    this._ApiService.getLiquorList('menuItem').subscribe((res: any) => {
+      this.liquorMenusList = res;
+      console.log(res, 'liquor list')
+      this.prepareLiquorData();
+      // this.liquoSelected(2, 'Starters', 'main')
+    }, e => {
+      console.log(e)
+    })
+
   }
 
   getMenuList() {
     this._ApiService.getMenuList('menuItem').subscribe((res: any) => {
       this.menusList = res;
+      console.log(this.menuList, 'menu list')
+     
       this.prepareData();
       this.itemSelected(2, 'Starters', 'main')
     }, e => {
@@ -114,11 +133,18 @@ export class FoodMenuComponent implements OnInit {
   }
 
   itemSelected(_index, _type, _subType) {
+    // alert('item clicked')
     this.showStarters = false
     if (_subType === 'main') {
       this.subCatSelectedIndex = 0;
       this.catSelectedIndex = _index;
-      this.selectedData = _type === 'All' ? this.foodData[this.categoryList[2].title] : this.foodData[_type];
+      if(this.isLiquor){
+        this.selectedData = _type === 'All' ? this.liquorData[this.categoryList[2].title] : this.liquorData[_type];
+
+      }else{
+        this.selectedData = _type === 'All' ? this.foodData[this.categoryList[2].title] : this.foodData[_type];
+
+      }
       this.cartData.type = _type
       if (_type == 'MainCourse') {
         this.showStarters = true
@@ -126,6 +152,20 @@ export class FoodMenuComponent implements OnInit {
       this.subCatUpdate(this.selectedData, _type)
     }
   }
+
+  // liquorItemSelected(_index, _type, _subType) {
+  //   this.showStarters = false
+  //   if (_subType === 'main') {
+  //     this.subCatSelectedIndex = 0;
+  //     this.catSelectedIndex = _index;
+  //     this.selectedData = _type === 'All' ? this.liquorData[this.categoryList[2].title] : this.liquorData[_type];
+  //     this.cartData.type = _type
+  //     if (_type == 'MainCourse') {
+  //       this.showStarters = true
+  //     }
+  //     this.subCatUpdate(this.selectedData, _type)
+  //   }
+  // }
 
   subCatUpdate(data, _type) {
     this.subCat = [];
@@ -138,6 +178,7 @@ export class FoodMenuComponent implements OnInit {
   subCatData(_index, _type) {
     this.subCatSelectedIndex = _index;
     this.finalResults = _type ? this.selectedData[_type] : this.selectedData[this.subCat[0]];
+    console.log(this.finalResults,'final results')
   }
 
   prepareData() {
@@ -163,8 +204,32 @@ export class FoodMenuComponent implements OnInit {
     })
     this.foodData = dataMap;
     this.selectedData = this.foodData;
-    this.itemSelected(2, 'All', 'main')
+    // this.itemSelected(2, 'Starters', 'main')
   }
+
+
+  prepareLiquorData() {
+    let liquorDataMap = {}
+    this.liquorMenusList['content'].forEach((item) => {
+      item.itemList.forEach((itemInside) => {
+        if (liquorDataMap[itemInside.category]) {
+          if (liquorDataMap[itemInside.category][itemInside.subType]) {
+            liquorDataMap[itemInside.category][itemInside.subType].push(itemInside)
+          } else {
+            liquorDataMap[itemInside.category][itemInside.subType] = [itemInside]
+          }
+        } else {
+          liquorDataMap[itemInside.category] = {
+            [itemInside.subType]: [itemInside]
+          }
+        }
+      })
+    })
+    this.liquorData = liquorDataMap;
+    this.selectedData = this.liquorData;
+    // this.itemSelected(2, 'House', 'main')
+  }
+
 
   onAddonSelect(event, item: any) {
 
@@ -329,8 +394,9 @@ export class FoodMenuComponent implements OnInit {
 
   getCart() {
     this._ApiService.cart('cart').subscribe(res => {
-      console.log('cartData', res)
+    
       if (res) {
+        console.log(res,'cart items')
         this.cartItems = res;
       }
     })
@@ -448,6 +514,7 @@ export class FoodMenuComponent implements OnInit {
   menu(){
     
     this.isMenuLink = true;
+    this.isLiquor = false;
     //let category = this.categoryTestData.content;
  /*for (let counter = 0; counter <= this.categoryTestData.content.length; counter++) {
   this.categoryList.push({
@@ -456,10 +523,14 @@ export class FoodMenuComponent implements OnInit {
   })
 }*/
 this.categoryList = this.menuList;
+this.itemSelected(2, 'Starters', 'main')
+
     
   }
-  licker(){
+  liquor(){
     this.isMenuLink = false;
+    this.isLiquor = true;
+  
     //let category = this.categoryTestData.content;
     /*for (let counter = 0; counter <= this.categoryTestData.content.length; counter++) {
       this.categoryList.push({
@@ -468,6 +539,19 @@ this.categoryList = this.menuList;
       })
     }*/
     //this.subCat = [];
+
   this.categoryList = this.liquorList;
+  this.itemSelected(0, 'Wines', 'main')
   }
+
+  checkOut(){
+    if(localStorage.getItem('name') != null){
+      this.router.navigate(['/payment'])
+    }else{
+      localStorage.setItem('checkout','true')
+      this.router.navigate(['/login'])
+      
+    }
+  }
+  
 }

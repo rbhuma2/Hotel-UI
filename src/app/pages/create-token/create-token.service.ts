@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CreateTokenService {
 
+  url = environment.serviceUrl
   constructor(
     private http: HttpClient
   ) { }
@@ -14,7 +16,7 @@ export class CreateTokenService {
     let headers = new HttpHeaders({
       'Content-Type': 'application/json'
     }); 
-    return this.http.post<any>("http://localhost:9090/v1/charge", payload, {'headers': headers});
+    return this.http.post<any>( this.url + "charge", payload, {'headers': headers});
   }
 
   /*public sendPaymentConfirmation(payload) {

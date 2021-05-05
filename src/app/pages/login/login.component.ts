@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this._AlertmessageService.errorMessageShow('');
-  }
+     }
 
   ngAfterViewInit() {
     this.signUpButton = document.getElementById('signUp');
@@ -55,27 +55,59 @@ export class LoginComponent implements OnInit {
   }
 
   onRegister(formData) {
+    // alert('restering')
     console.log(formData)
     this.errorData.show = false
-    this._ApiService.post('user', formData).subscribe(response => {
-      this._AlertmessageService.successAlert('Successfully Registered!')
-      localStorage.setItem('name', formData.name)
-      this.container.classList.add("right-panel-active");
-      this.container.classList.remove("right-panel-active");
-      this._AlertmessageService.errorMessageShow('');
-    }, error => {
-      this._AlertmessageService.errorMessageShow(error);
-    })
-  }
+    if(localStorage.getItem('name') != null){
+      // alert('creating admin')
+      this._ApiService.makeAdmin('user', formData).subscribe((response) => {
+        console.log(response)
+        // alert('registered successfully')
+        this._AlertmessageService.successAlert('Successfully created admin!')
+        this._Router.navigate(['/home'])
+     
+     
+      }, error => {
+        console.log(error)
+        this._AlertmessageService.errorMessageShow(error);
+      })
+
+
+    }else{
+      this._ApiService.post('user', formData).subscribe((response) => {
+        alert('registered')
+        this._AlertmessageService.successAlert('Successfully Registered!')
+        localStorage.setItem('name', formData.name)
+        // this.signInButton = document.getElementById('signIn') as HTMLElement;
+        // this.signInButton.click();
+      
+
+        this.container.classList.add("right-panel-active");
+        this.container.classList.remove("right-panel-active");
+        this._AlertmessageService.errorAlert('')
+      }, error => {
+        this._AlertmessageService.errorMessageShow(error);
+      })
+  
+
+    }
+     }
 
   onLogin(formData) {
     console.log(formData)
     this.errorData.show = false
     this._ApiService.post('userValidate', formData).subscribe(response => {
+     
       localStorage.setItem('email', formData.email)
+      localStorage.setItem('name', response.name)
       this._AlertmessageService.successAlert('Successfully Logged in!')
       sessionStorage.setItem("isAdmin",response.admin)
-      this._Router.navigate(['/menu'])
+      if(localStorage.getItem('checkout') != null){
+        this._Router.navigate(['/payment'])
+      }else{
+        this._Router.navigate(['/menu'])
+      }
+     
       this._AlertmessageService.errorMessageShow('');
       console.log(response)
     }, error => {

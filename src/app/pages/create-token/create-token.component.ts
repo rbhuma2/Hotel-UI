@@ -53,6 +53,7 @@ export class CreateTokenComponent implements OnInit {
 
   ngOnInit(): void {
     
+    localStorage.removeItem('checkout')
     this.setAmount();
     this.stripeTest = this.fb.group({
       name: ['', [Validators.required]]
@@ -70,6 +71,7 @@ export class CreateTokenComponent implements OnInit {
 
   createToken(): void {
     const name = this.stripeTest.get('name').value;
+    const email = localStorage.getItem('email')
     this.stripeService
       .createToken(this.card.element, { name })
       .subscribe((result) => {
@@ -78,7 +80,8 @@ export class CreateTokenComponent implements OnInit {
           let requestObject = {
             "amount"          : this.amount,
             "stripeToken"     : result.token.id,
-            "id"              : this.identifier
+            "id"              : this.identifier,
+            "email"           : email
           }
 
           /** Sending the generated token and price to the backend charges API to complete the transaction */
